@@ -18,8 +18,10 @@ Last Update: 28-05-2023
   - [Nash Equilibrium](#nash-equilibrium)
   - [Backward Induction](#backward-induction)
   - [Questions](#questions-2)
-- [Trustworthy AI](#trustworthy-ai)
+- [Ethics Guidelines for Trustworthy AI](#ethics-guidelines-for-trustworthy-ai)
+  - [Methods To Realize Trustworthy AI](#methods-to-realize-trustworthy-ai)
 - [Human Right and Information Technology](#human-right-and-information-technology)
+  - [The Universal Declaration of Human Rights](#the-universal-declaration-of-human-rights)
 - [AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
   - [Risks and Benefits of AI](#risks-and-benefits-of-ai)
   - [Cambridge Analytica](#cambridge-analytica)
@@ -38,6 +40,8 @@ Last Update: 28-05-2023
   - [Right to Erasure (Article 17)](#right-to-erasure-article-17)
   - [Processing of special categories of personal data (Article 9)](#processing-of-special-categories-of-personal-data-article-9)
   - [Automated individual decision-making, including profiling (Article 22)](#automated-individual-decision-making-including-profiling-article-22)
+- [Text analytics in the legal domain (Summary)](#text-analytics-in-the-legal-domain-summary)
+- [Fairness in algorithmic decision making (Summary)](#fairness-in-algorithmic-decision-making-summary)
 - [Do Artifacts Have Politics? (Seminar)](#do-artifacts-have-politics-seminar)
 - [Responsibility and Automation in Socio-Technical Systems (Seminar)](#responsibility-and-automation-in-socio-technical-systems-seminar)
 
@@ -430,7 +434,7 @@ Backward induction can also be applied to more complex scenarios, such as multi-
 
 &nbsp;
 
-# Trustworthy AI
+# Ethics Guidelines for Trustworthy AI
 
 **The "Ethics Guidelines for Trustworthy AI" document**, prepared by the High-Level Expert Group on Artificial Intelligence set up by the European Commission, **provides comprehensive guidelines for ensuring the ethical and responsible development and use of AI systems**. It aims to promote AI that is lawful, ethical, and robust, while considering the potential risks and impacts on individuals and society as a whole. Let's explore the key points and principles outlined in the document.
 
@@ -458,11 +462,35 @@ The European Commission's approach to AI, as outlined in their communications, f
 
 The guidelines emphasize the importance of **human-centric AI**, which aims to use AI in service of humanity and the common good while minimizing risks. The document also distinguishes between ethics and law, stating that ethics provides norms of what should be done, while law consists of norms adopted through institutional processes and enforcement.
 
-The Guidelines for Trustworthy AI can be voluntarily adopted by stakeholders to operationalize their commitment. They are applicable to various AI stakeholders, including companies, organizations, researchers, public services, government agencies, institutions, civil society organizations, individuals, workers, and consumers. However, it is essential to note that compliance with these guidelines does not create legal rights or obligations toward third parties.
+&nbsp;
 
-The document also highlights the importance of **AI being lawful**, complying with applicable laws at the European Union level, including primary and secondary laws, as well as international human rights treaties and conventions. Horizontal laws covering all AI applications are still under development.
+## Methods To Realize Trustworthy AI
 
-[DA FINIRE]
+Technical Methods to Realize Trustworthy AI:
+
+1. **Model Explainability**: Develop AI models and algorithms that can provide explanations for their decisions and actions. This helps in understanding the reasoning behind AI systems' outputs and allows for transparency and accountability.
+
+2. **Data Governance**: Implement robust data governance practices to ensure the quality, integrity, and fairness of the data used in AI systems. This includes addressing biases, inaccuracies, and privacy concerns related to the data.
+
+3. **Safety and Security Measures**: Build AI systems with robust safety and security features to prevent vulnerabilities and protect against potential attacks or misuse. This includes measures such as encryption, access controls, and secure coding practices.
+
+4. **Accuracy and Reliability**: Ensure that AI systems are designed to produce accurate and reliable results. This involves rigorous testing, validation, and verification processes to minimize errors and improve performance.
+
+5. **Human Oversight and Control**: Incorporate mechanisms for human oversight and control over AI systems. This can be achieved through approaches such as human-in-the-loop, human-on-the-loop, or human-in-command, where humans have the ability to intervene, review, and make decisions alongside AI systems.
+
+Non-Technical Methods to Realize Trustworthy AI:
+
+1. **Ethical Frameworks and Standards**: Develop and adopt ethical frameworks, guidelines, and standards for AI development and deployment. These provide a set of principles and best practices that promote responsible and trustworthy AI.
+
+2. **Stakeholder Engagement**: Foster collaboration and engagement with various stakeholders, including users, affected communities, policymakers, and experts. This ensures that diverse perspectives and concerns are considered in the development and use of AI systems.
+
+3. **Accountability Mechanisms**: Establish mechanisms to hold AI system developers, operators, and users accountable for their actions. This can involve regulatory frameworks, legal frameworks, and codes of conduct that define responsibilities and consequences for non-compliance.
+
+4. **Education and Awareness**: Promote education and awareness about AI technologies, their capabilities, and potential risks. This empowers individuals to make informed decisions, understand the implications of AI systems, and advocate for responsible AI practices.
+
+5. **Impact Assessment**: Conduct thorough impact assessments to evaluate the social, economic, and environmental impacts of AI systems. This helps identify and mitigate potential risks and unintended consequences, ensuring that AI benefits society as a whole.
+
+By combining technical and non-technical methods, stakeholders can work towards the development and deployment of trustworthy AI systems that respect fundamental rights, uphold ethical principles, and serve the best interests of individuals and society.
 
 &nbsp;
 
@@ -481,6 +509,10 @@ When discussing the impact of information technologies on human rights, the conc
 In contemplating the impact of information technologies on human rights, it is crucial to consider a broader perspective that encompasses human values. Human rights can be seen as primarily ethical demands, not merely confined to legal frameworks. They involve ensuring freedoms, including liberty and social rights, that satisfy specific "threshold conditions" of significance and social impact. Human rights can impose imperfect duties, which require advocacy, balance, and consideration, as well as perfect duties, which demand legal enforcement.
 
 Information and communication technologies can both interfere with and contribute to the protection and implementation of human rights. Furthermore, they have the potential to give rise to new human rights or add new dimensions to existing rights by assigning importance to certain human opportunities and enabling society to actualize them. Examples include the right to access the internet, right to basic income, and right to new medical technologies.
+
+&nbsp;
+
+## The Universal Declaration of Human Rights
 
 **The Universal Declaration of Human Rights** is a historic document adopted by the United Nations General Assembly in 1948. It serves as a global framework for the protection and promotion of fundamental human rights and freedoms. The Declaration consists of 30 articles that outline the rights and principles that every person is entitled to, regardless of their nationality, race, religion, gender, or any other status.
 List of Human Rights from the Universal Declaration of Human Rights:
@@ -772,6 +804,36 @@ Article 22 of the GDPR addresses automated individual decision-making, including
 
 &nbsp;
 
+# Text analytics in the legal domain (Summary)
+
+The provided text describes a master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
+
+The main goal of the project is to explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
+
+The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
+
+The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
+
+The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
+
+The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
+
+&nbsp;
+
+&nbsp;
+
+# Fairness in algorithmic decision making (Summary)
+
+The article discusses fairness in algorithmic decision-making, focusing on the combination of artificial intelligence (AI) and big data. It examines the potential causes of unfairness in AI systems, including biases and discriminatory outcomes. The article highlights that AI systems have the potential to be more precise and impartial than humans in many domains but also points out the possibility of algorithmic mistakes and discrimination.
+
+The authors discuss different ways in which unfairness can arise in algorithmic decision-making systems. These include the reproduction of human biases and prejudices in the training data, biases embedded in the predictors used by the system, biased training sets, and data sets that do not reflect the statistical composition of the population. The challenges in challenging the unfairness of automated decision-making systems are also discussed, noting that it can be difficult to challenge these systems due to the reliance on statistical correlations and the higher burden of evidence required compared to the algorithms themselves.
+
+The article presents the case of the COMPAS predictive system and the Loomis case, which involved the use of the COMPAS system in a sentencing decision. The challenges and criticisms raised regarding the accuracy and fairness of the COMPAS system are examined, as well as the rebuttals to those criticisms. The article concludes by suggesting that while there are challenges and limitations, the use of automated decision-making should not be categorically excluded. Instead, a combination of human and automated judgments, transparency, and the development of methods to analyze and review automated decision-making should be pursued to find the best balance between human expertise and AI capabilities.
+
+&nbsp;
+
+&nbsp;
+
 # Do Artifacts Have Politics? (Seminar)
 
 In this presentation, we delve into the intriguing question of whether artifacts have politics. We examine the social and moral implications of technological artifacts and their role in shaping human actions, perceptions, and ethical decision-making. Through various examples, we will explore how artifacts can become politically or morally charged, challenging the traditional understanding of morality as solely a human affair.
@@ -819,6 +881,4 @@ Liability Shift in Highly Automated Systems
 In highly automated systems or AI systems, there is a gradual shift in liability from individual operators to the organizations developing, using, and maintaining the technology. This liability shift can be attributed to product liability, organizational or no-fault liability, and vicarious liability for faults of employees. As automation advances, it is crucial to assess liability as early as possible in the technology's life cycle, considering the role of technology in accidents.
 
 Decision-Making Authority
-Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws
-
-.
+Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws.
