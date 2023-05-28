@@ -1,372 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>EticaGPT.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Table of Contents</title>
+        <style>
+/* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-	background-color: darkslategray;
-    color: white;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
 }
 
 </style>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
 }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
 }
 </style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#consequentialism">Consequentialism</a>
+<ul>
+<li><a href="#utilitarianism">Utilitarianism</a></li>
+<li><a href="#wealth-redistribution">Wealth Redistribution</a></li>
+<li><a href="#act-and-rule-utilitarianism">Act and Rule Utilitarianism</a></li>
+<li><a href="#act-and-rule-utilitarianism-in-ai">Act and Rule Utilitarianism in AI</a></li>
+<li><a href="#popular-ethical-dilemmas">Popular Ethical Dilemmas</a></li>
+<li><a href="#questions">Questions</a></li>
+</ul>
+</li>
+<li><a href="#deontology---kantian">Deontology - Kantian</a>
+<ul>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#disadvanges">Disadvanges</a></li>
+<li><a href="#questions-1">Questions</a></li>
+</ul>
+</li>
+<li><a href="#game-theory">Game Theory</a>
+<ul>
+<li><a href="#game-theory-framework">Game Theory Framework</a></li>
+<li><a href="#nash-equilibrium">Nash Equilibrium</a></li>
+<li><a href="#backward-induction">Backward Induction</a></li>
+<li><a href="#questions-2">Questions</a></li>
+</ul>
+</li>
+<li><a href="#trustworthy-ai">Trustworthy AI</a></li>
+<li><a href="#human-right-and-information-technology">Human Right and Information Technology</a></li>
+<li><a href="#ai-algorithmic-decision-making-and-big-data-risks-and-opportunities">AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities</a>
+<ul>
+<li><a href="#risks-and-benefits-of-ai">Risks and Benefits of AI</a></li>
+<li><a href="#cambridge-analytica">Cambridge Analytica</a></li>
+<li><a href="#profiling">Profiling</a></li>
+<li><a href="#individual-and-social-cost">Individual and Social Cost</a></li>
+</ul>
+</li>
+<li><a href="#ai-in-the-gdpr">AI in the GDPR</a>
+<ul>
+<li><a href="#territorial-scope-article-3">Territorial Scope (Article 3):</a></li>
+<li><a href="#definitions-article-4">Definitions (Article 4):</a></li>
+<li><a href="#data-protection-principles-article-5">Data Protection Principles (Article 5):</a></li>
+<li><a href="#lawfulness-of-processing-article-6">Lawfulness of Processing (Article 6):</a></li>
+<li><a href="#personal-data-article-41">Personal Data (Article 4(1)):</a></li>
+<li><a href="#profiling-article-42">Profiling (Article 4(2))</a></li>
+<li><a href="#consent-article411">Consent (Article4(11))</a></li>
+<li><a href="#condition-for-consent-article-7">Condition for Consent (Article 7)</a></li>
+<li><a href="#information-to-be-provided-to-the-data-subject-articles-13-14">Information to be provided to the data subject (Articles 13-14)</a></li>
+<li><a href="#right-to-erasure-article-17">Right to Erasure (Article 17)</a></li>
+<li><a href="#processing-of-special-categories-of-personal-data-article-9">Processing of special categories of personal data (Article 9)</a></li>
+<li><a href="#automated-individual-decision-making-including-profiling-article-22">Automated individual decision-making, including profiling (Article 22)</a></li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
 <h1 id="introduction">Introduction</h1>
 <p><strong>Morality</strong> or <strong>ethics</strong> refers to the principles and values that guide human behavior and determine what is considered right or wrong. When making decisions or evaluating the actions of others, individuals can take either a self-interested perspective, focusing on their own particular interests, or they can be motivated by the belief that an action is morally right, regardless of its impact on their self-interest. Morality is influenced by social norms and is often learned through socialization processes within a society. People absorb the moral standards considered obligatory in their society and make them their own. This raises the question of whether morality is solely a matter of social learning and imitation. Can individuals develop a critical attitude toward their society's morality? And if so, what is the basis for this critical attitude-reason or intuition?</p>
 <p><strong>Positive morality</strong>, also known as <strong>conventional morality</strong>, refers to the moral rules and principles that are widely accepted in a society. These include social norms, cultural values, and legal regulations. However, it is important to question whether positive morality can be inherently bad or flawed.</p>
@@ -386,31 +118,9 @@ code {
 <li><strong>Relativists</strong>, on the other hand, argue that ethical judgments are subjective and vary depending on cultural, social, or individual perspectives. They believe that a statement like &quot;abortion is morally permissible&quot; may be true within one framework but false within another.</li>
 </ul>
 <p>Gilbert Harman's example highlights a scenario where an individual may judge an action as great evil but still find it challenging to determine whether it was morally wrong. This illustrates the complexity and disagreement that can arise even when evaluating morally significant events.</p>
-<p>Morality often involves widespread disagreement, as seen in contentious
-issues like abortion, migration, capital punishment, and humanitarian
-wars. However, there are certain moral principles that many people tend
-to agree on, such as the belief that it is wrong to kill innocent
-people, lie, or harm others.</p>
-<p>Moral judgments can be either <strong>pro-tanto</strong> or
-<strong>all-things-considered</strong>. Pro-tanto moral judgments state general
-principles that can have exceptions. For example, the principle &quot;we
-should not lie&quot; can be outweighed by other moral reasons when, for
-instance, telling a lie could save a person's life. It raises the
-question of whether robotic agents should consider their duties as
-defeasible or subject to exceptions. David Ross provides an example of
-breaking an engagement to prevent a serious accident, highlighting the
-importance of weighing moral reasons in specific contexts.</p>
-<p>Morality intersects with other normative systems, such as law, religion,
-tradition, and self-interest. Positive or critical morality may include
-laws enforced by the state, but it is debatable whether it encompasses
-all laws or only specific ones. Similarly, critical morality's inclusion
-of religious commands raises questions about the relationship between
-divine commands and moral obligations. The moral status of atheists and
-the comparison between religious and atheistic societies in terms of
-morality are also matters of discussion. Additionally, the conflict
-between self-interest and morality arises, questioning whether
-individuals should only act in ways that serve their personal
-interests.</p>
+<p>Morality often involves widespread disagreement, as seen in contentious issues like abortion, migration, capital punishment, and humanitarian wars. However, there are certain moral principles that many people tend to agree on, such as the belief that it is wrong to kill innocent people, lie, or harm others.</p>
+<p>Moral judgments can be either <strong>pro-tanto</strong> or <strong>all-things-considered</strong>. Pro-tanto moral judgments state general principles that can have exceptions. For example, the principle &quot;we should not lie&quot; can be outweighed by other moral reasons when, for instance, telling a lie could save a person's life. It raises the question of whether robotic agents should consider their duties as defeasible or subject to exceptions. David Ross provides an example of breaking an engagement to prevent a serious accident, highlighting the importance of weighing moral reasons in specific contexts.</p>
+<p>Morality intersects with other normative systems, such as law, religion, tradition, and self-interest. Positive or critical morality may include laws enforced by the state, but it is debatable whether it encompasses all laws or only specific ones. Similarly, critical morality's inclusion of religious commands raises questions about the relationship between divine commands and moral obligations. The moral status of atheists and the comparison between religious and atheistic societies in terms of morality are also matters of discussion. Additionally, the conflict between self-interest and morality arises, questioning whether individuals should only act in ways that serve their personal interests.</p>
 <p> </p>
 <p> </p>
 <h1 id="consequentialism">Consequentialism</h1>
@@ -459,6 +169,69 @@ interests.</p>
 <p>Another ethical dilemma arises in the context of autonomous vehicles, known as the social dilemma of autonomous vehicles. Researchers like Bonnefon et al. (2016) have explored scenarios where <strong>autonomous vehicles face situations where they must make decisions that could potentially harm some individuals to save others</strong>. These scenarios highlight the challenges of applying consequentialist principles to real-world situations.</p>
 <p>Finally, Judith Jarvis Thomson's surgeon case presents a moral dilemma where a <strong>transplant surgeon has the opportunity to save five dying patients by killing a healthy young traveler who is compatible with their organs</strong>. The question is whether the surgeon's actions can be justified from a utilitarian perspective, considering the overall utility gained by saving five lives at the cost of one.</p>
 <p> </p>
+<h2 id="questions">Questions</h2>
+<ol>
+<li>
+<p><strong>In the context of AI decision-making, what are the key differences between act utilitarianism and rule utilitarianism?</strong></p>
+<p>In the context of AI decision-making, the key difference between act utilitarianism and rule utilitarianism lies in how they approach the optimization of utility.</p>
+<ul>
+<li>Act utilitarianism focuses on maximizing utility on a case-by-case basis, making decisions based on the specific situation and its expected outcomes.</li>
+<li>On the other hand, rule utilitarianism emphasizes following pre-established rules or principles that maximize overall utility, considering the long-term consequences of adopting those rules across a range of situations.</li>
+</ul>
+<p>Act utilitarianism prioritizes immediate utility optimization, while rule utilitarianism prioritizes consistency and general utility maximization.</p>
+</li>
+<li>
+<p><strong>What are the challenges associated with implementing act utilitarianism in AI systems that aim to optimize utility on a case-by-case basis?</strong></p>
+<p>Implementing act utilitarianism in AI systems that aim to optimize utility on a case-by-case basis faces several challenges.</p>
+<ul>
+<li>One major challenge is the need for access to detailed and accurate information about each specific situation to calculate potential outcomes and assess utility. This can be difficult, as some situations may involve uncertain or incomplete data.</li>
+<li>Additionally, act utilitarianism may raise ethical concerns when individual rights or interests are sacrificed for the sake of overall utility, necessitating careful consideration of value conflicts and trade-offs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Discuss the complexities involved in defining a set of rules for AI systems based on rule utilitarianism to maximize overall utility.</strong></p>
+<p>Defining a set of rules for AI systems based on rule utilitarianism to maximize overall utility involves several complexities.</p>
+<ul>
+<li>Firstly, determining the specific rules that would effectively optimize utility across a wide range of situations requires careful consideration and analysis of potential outcomes. Balancing conflicting interests and values while ensuring consistency and avoiding contradictions can be challenging.</li>
+<li>Additionally, the dynamic nature of real-world scenarios may necessitate periodic updates and adjustments to the rule set, requiring ongoing evaluation and adaptation to maintain effectiveness in maximizing overall utility.</li>
+</ul>
+</li>
+<li>
+<p><strong>Can you make an example on how AI act utilitarianism and rule utilitarianism from an etical point of view?</strong></p>
+<p>Suppose an AI system is designed to assist doctors in making medical diagnoses.</p>
+<ul>
+<li>If the AI system follows act utilitarianism, it would analyze each individual patient's case and recommend the treatment that maximizes the overall well-being or health outcomes for that specific patient, without being bound by predetermined rules or guidelines. This approach could lead to personalized and tailored treatment plans for each patient, considering their unique circumstances and medical history.</li>
+<li>On the other hand, if the AI system follows rule utilitarianism, it would adhere to a set of predefined medical guidelines or protocols that have been established to maximize overall health outcomes. The AI system would recommend treatments based on established rules, considering the collective knowledge and experience of medical experts. This approach aims to ensure consistency and avoid potential biases or errors in individual case assessments.</li>
+</ul>
+<p>From an ethical standpoint, act utilitarianism in AI could raise concerns regarding fairness and potential biases if the AI system disproportionately prioritizes certain patients or neglects those with rarer conditions. It also requires a high level of accuracy and up-to-date information to assess utility accurately in each case. On the other hand, rule utilitarianism may limit flexibility and fail to account for the unique circumstances of individual patients, potentially resulting in suboptimal outcomes in certain cases. Balancing the benefits and challenges of act and rule utilitarianism in AI systems requires considering the values and goals of healthcare, patient preferences, and the need for ethical oversight to ensure that decisions align with societal values and ethical principles.</p>
+</li>
+<li>
+<p><strong>How can the values, goals, and societal context influence the determination of the utility function and the type of utilitarianism for AI systems?</strong></p>
+<p>The values, goals, and societal context play a significant role in determining the utility function and the type of utilitarianism for AI systems.</p>
+<ul>
+<li>Different societies may have varying priorities and definitions of utility, influenced by cultural, ethical, and legal norms. The determination of the utility function requires careful consideration of these factors to ensure alignment with societal values and goals.</li>
+<li>Additionally, the type of utilitarianism chosen, whether act or rule utilitarianism, will depend on the prevailing ethical perspectives, societal preferences for flexibility or consistency, and the balance between individual case optimization and overall utility maximization.</li>
+</ul>
+</li>
+<li>
+<p><strong>Discuss the trade-offs involved in optimizing utility on a case-by-case basis versus following predefined rules to maximize overall utility in the context of AI decision-making.</strong></p>
+<p>The trade-offs in optimizing utility on a case-by-case basis versus following predefined rules in AI decision-making involve a balance between individualized outcomes and consistency.</p>
+<ul>
+<li>Case-by-case optimization allows for tailored solutions but may lead to potential biases or conflicting interests.</li>
+<li>Following predefined rules promotes consistency but may overlook unique circumstances or miss out on potential utility gains.</li>
+</ul>
+<p>Striking the right balance requires careful consideration of context, ethical principles, and the values of both individuals and society.</p>
+</li>
+<li>
+<p><strong>Compare and contrast the trolley problem and the social dilemma of autonomous vehicles, highlighting the challenges of consequentialist decision-making in these scenarios.</strong></p>
+<p>Both the trolley problem and the social dilemma of autonomous vehicles present ethical challenges for consequentialist decision-making. In the trolley problem, the challenge lies in deciding to divert a runaway trolley to save one person at the expense of five others, highlighting the moral complexity of actively causing harm to achieve a greater overall good. In the social dilemma of autonomous vehicles, the challenge arises when autonomous vehicles must make decisions that potentially harm some individuals to save others, posing questions about the allocation of risks and the responsibility of programming ethical priorities into AI systems.</p>
+</li>
+<li>
+<p><strong>How does Thomson's surgeon case raise moral questions about the utilitarian perspective and the trade-off between saving multiple lives at the cost of one?</strong></p>
+<p>Thomson's surgeon case raises moral questions about the utilitarian perspective by challenging the trade-off between saving multiple lives at the cost of one. It prompts us to question whether the act of killing one healthy individual to save five dying patients can be morally justified from a utilitarian standpoint, considering the overall utility gained versus the violation of individual rights and the sanctity of life.</p>
+</li>
+</ol>
+<p> </p>
 <p> </p>
 <h1 id="deontology---kantian">Deontology - Kantian</h1>
 <p><strong>Deontology</strong>, also known as <strong>Kantian ethics</strong>, is a moral framework that <strong>emphasizes the inherent rightness or wrongness of actions, regardless of their consequences</strong>. It is contrasted with consequentialism, which evaluates actions based on the outcomes they produce.</p>
@@ -475,17 +248,75 @@ interests.</p>
 <h2 id="disadvanges">Disadvanges</h2>
 <p>While deontology provides a strong framework for moral decision-making, it also has its limitations and criticisms. Some argue that it can be <strong>too rigid and inflexible</strong>, failing to consider the context and consequences of actions. Others question the universality of moral norms and principles, suggesting that they may vary across cultures and individuals.</p>
 <p> </p>
+<h2 id="questions-1">Questions</h2>
+<ol>
+<li>
+<p><strong>What is the key difference between deontology and consequentialism in terms of how they evaluate the morality of actions?</strong></p>
+<p>The key difference between deontology and consequentialism lies in how they evaluate the morality of actions.</p>
+<ul>
+<li>Deontology emphasizes the inherent rightness or wrongness of actions based on adherence to moral norms or principles, regardless of their consequences.</li>
+<li>In contrast, consequentialism evaluates actions based on their outcomes or consequences, prioritizing the maximization of overall utility or happiness.</li>
+</ul>
+</li>
+<li>
+<p><strong>How does deontology determine the rightness or wrongness of an action, and what role do consequences play in this framework?</strong></p>
+<p>Deontology determines the rightness or wrongness of an action based on adherence to moral norms or principles, regardless of consequences. In this framework, consequences do not play a central role in evaluating the morality of an action; the focus is on the inherent rightness or wrongness of the action itself, independent of its outcomes.</p>
+</li>
+<li>
+<p><strong>Provide an example of a morally wrong action according to deontology, regardless of its potential positive or negative consequences.</strong></p>
+<p>Lying is considered morally wrong according to deontology, regardless of its potential positive or negative consequences.</p>
+</li>
+<li>
+<p><strong>Explain the concept of treating humanity as an end in itself in Kantian ethics and its significance in moral decision-making.</strong></p>
+<p>Treating humanity as an end in itself in Kantian ethics means valuing individuals as inherently valuable and worthy of respect, rather than mere means to an end. It emphasizes considering the inherent dignity and moral worth of every individual when making moral decisions, and not using them solely as tools or objects for personal gain. This concept highlights the importance of respecting the autonomy and intrinsic value of others in moral decision-making.</p>
+</li>
+<li>
+<p><strong>How does the golden rule relate to the concept of impartiality in ethical decision-making, and what are its limitations?</strong></p>
+<p>The golden rule relates to the concept of impartiality in ethical decision-making by emphasizing the importance of treating others as one would like to be treated. It promotes fairness and respect for others in moral judgments. However, its limitations arise in situations where following the golden rule may lead to undesirable outcomes or conflicts of interest, as the preferences and values of individuals may vary, and some individuals may desire treatment that is harmful or unethical.</p>
+</li>
+<li>
+<p><strong>Describe Immanuel Kant's principle of universalizability and its role in determining the morality of an action.</strong></p>
+<p>Immanuel Kant's principle of universalizability states that an action is morally right if its underlying principle or maxim can be consistently applied as a universal law. It plays a crucial role in determining the morality of an action by evaluating whether the principle behind an action can be rationally and consistently applied by everyone without contradiction or inconsistency.</p>
+</li>
+<li>
+<p><strong>What does it mean for a maxim to be morally right according to Kantian ethics, and how is it tested through the principle of universalizability?</strong></p>
+<p>For a maxim to be morally right according to Kantian ethics, it means that the underlying principle or intention of the action can be universalized without contradiction or inconsistency. The principle of universalizability tests the moral rightness of a maxim by examining whether it can be consistently applied as a universal law. If the maxim leads to logical contradictions or inconsistencies when universalized, it is considered morally wrong.</p>
+</li>
+<li>
+<p><strong>Can you provide an example of testing the universalizability of a maxim and explaining why it would be considered morally wrong?</strong></p>
+<p>An example of testing the universalizability of a maxim is the act of lying. If the maxim &quot;It is permissible to lie whenever it serves my personal interests&quot; were universalized, it would lead to a contradiction. If everyone lied whenever it suited their personal interests, trust and communication would break down, rendering lying ineffective and undermining its own purpose. Therefore, lying as a maxim fails the test of universalizability and is considered morally wrong in Kantian ethics.</p>
+<p>An example of testing the universalizability of a maxim is the act of making false promises. If the maxim &quot;It is morally acceptable to make false promises whenever it benefits me&quot; is universalized, it leads to a contradiction. If everyone were to make false promises, trust in promises would break down, rendering promises meaningless. Therefore, this maxim would be considered morally wrong in Kantian ethics due to the logical inconsistency it creates when universalized.</p>
+</li>
+<li>
+<p><strong>What criticisms or limitations are often raised against deontological ethics, particularly its rigidity and inflexibility?</strong></p>
+<p>Critics often raise concerns about the rigidity and inflexibility of deontological ethics, arguing that it fails to consider the context and consequences of actions. They claim that strict adherence to moral norms or principles may lead to morally undesirable outcomes or overlook the complexity of real-life situations.</p>
+<p>Additionally, some argue that the universality of moral norms and principles may vary across cultures and individuals, challenging the rigid nature of deontological ethics.</p>
+</li>
+<li>
+<p><strong>How might cultural relativism challenge the universality of moral norms and principles proposed by deontology?</strong></p>
+<p>Cultural relativism challenges the universality of moral norms and principles proposed by deontology by asserting that moral values and practices vary across cultures. It suggests that what is considered morally right or wrong can differ based on cultural context, undermining the idea of universal moral principles that deontology relies upon.</p>
+</li>
+<li>
+<p><strong>Discuss the potential implications of deontological ethics in real-life scenarios where context and consequences are important factors to consider.</strong></p>
+<p>Deontological ethics, with its focus on adherence to moral norms and principles regardless of consequences, may have implications in real-life scenarios where context and consequences are crucial. It could lead to rigidity and inflexibility in decision-making, potentially overlooking the complexity of situations and yielding morally undesirable outcomes. Balancing the importance of moral principles with contextual considerations is necessary to address the practical challenges of deontological ethics in such scenarios.</p>
+</li>
+<li>
+<p><strong>Can deontological ethics be reconciled with consequentialist considerations in certain situations, or are they fundamentally incompatible?</strong></p>
+<p>Deontological ethics and consequentialist considerations can be reconciled in certain situations through ethical frameworks like rule consequentialism or hybrid theories. These frameworks attempt to incorporate both deontological principles and consequentialist outcomes, finding ways to balance moral obligations and the overall consequences of actions. While there may be challenges in reconciling them, they are not necessarily fundamentally incompatible.</p>
+</li>
+</ol>
+<p> </p>
 <p> </p>
 <h1 id="game-theory">Game Theory</h1>
-<p><strong>Game theory is a field that analyzes the strategic interactions between rational decision-makers</strong>. It has applications in various disciplines, including economics, political science, and law. In the context of law, game theory provides a framework to understand and analyze how legal actors, such as judges, lawyers, and litigants, make decisions and interact with each other. In the usual framework used by economists, an agent is faced with a set of alternatives from which they must choose. These alternatives can be represented as $X = x_1, x_2, ..., x_n,$ for example, a set of fruits like &quot;Big apple&quot; &quot;Small apple&quot; and &quot;Pear&quot; The agent has a preference relation represented by the symbol &quot;$\gtrsim$&quot; (read as &quot;is weakly preferred to&quot;). For instance, $x_i$ $\gtrsim$ $x_j$ means that $x_i$ is at least as valuable or desired as $x_j$. We can also use the notation $x_i$ $\ge$ $x_j$ to represent the same relationship, and $x_i \ge x_j$ to represent strict preference ($x_i$ is strictly preferred to $x_j$).</p>
+<p><strong>Game theory is a field that analyzes the strategic interactions between rational decision-makers</strong>. It has applications in various disciplines, including economics, political science, and law. In the context of law, game theory provides a framework to understand and analyze how legal actors, such as judges, lawyers, and litigants, make decisions and interact with each other. In the usual framework used by economists, an agent is faced with a set of alternatives from which they must choose. These alternatives can be represented as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">X = x_1, x_2, ..., x_n,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span></span></span></span> for example, a set of fruits like &quot;Big apple&quot; &quot;Small apple&quot; and &quot;Pear&quot; The agent has a preference relation represented by the symbol &quot;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≳</mo></mrow><annotation encoding="application/x-tex">\gtrsim</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel amsrm">≳</span></span></span></span>&quot; (read as &quot;is weakly preferred to&quot;). For instance, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≳</mo></mrow><annotation encoding="application/x-tex">\gtrsim</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel amsrm">≳</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> means that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is at least as valuable or desired as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>. We can also use the notation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\ge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> to represent the same relationship, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_i \ge x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.786em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> to represent strict preference (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is strictly preferred to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>).</p>
 <p>Certain assumptions are typically made regarding these preference relations:</p>
 <ul>
-<li>The first assumption is <strong>reflexivity</strong>, which states that every alternative is as valuable as itself ($x_i \gtrsim x_i$ for any alternative $x_i$).</li>
-<li>The second assumption is <strong>completeness</strong>, which means that all alternatives are comparable ($x_i \gtrsim x_j or x_j \gtrsim x_i$ for any alternatives $x_i$ and $x_j$). In other words, one alternative must be at least as valuable as the other.</li>
-<li><em>Transitivity</em> is another assumption, stating that if $x_i \gtrsim x_j$ and $x_j \gtrsim x_k, then $x_i \gtrsim x_k$.</li>
+<li>The first assumption is <strong>reflexivity</strong>, which states that every alternative is as valuable as itself (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≳</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i \gtrsim x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">≳</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> for any alternative <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>).</li>
+<li>The second assumption is <strong>completeness</strong>, which means that all alternatives are comparable (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≳</mo><msub><mi>x</mi><mi>j</mi></msub><mi>o</mi><mi>r</mi><msub><mi>x</mi><mi>j</mi></msub><mo>≳</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i \gtrsim x_j or x_j \gtrsim x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">≳</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0157em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">≳</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> for any alternatives <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>). In other words, one alternative must be at least as valuable as the other.</li>
+<li><em>Transitivity</em> is another assumption, stating that if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≳</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_i \gtrsim x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">≳</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> and $x_j \gtrsim x_k, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≳</mo><msub><mi>x</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">x_i \gtrsim x_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">≳</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>.</li>
 <li>Finally, <strong>continuity</strong> is often assumed, but not always, which deals with the continuity of preferences and the ability to make small adjustments to them.</li>
 </ul>
-<p>To quantify preferences, economists often use utility functions. These functions assign numbers to alternatives to reflect the ordering of preferences. A utility function $u(x)$ associates a number to each element $x$ in $X$, such that for any $u(x_i)$ and $u(x_j)$, $u(x_i)$ $\gtrsim$ $u(x_j)$ if and only if $u(x_i)$ $\ge$ $u(x_j)$. In simpler terms, if an apple is strictly preferred to a pear, then the number associated with the apple must be greater than the number associated with the pear.</p>
+<p>To quantify preferences, economists often use utility functions. These functions assign numbers to alternatives to reflect the ordering of preferences. A utility function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> associates a number to each element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>, such that for any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≳</mo></mrow><annotation encoding="application/x-tex">\gtrsim</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel amsrm">≳</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> if and only if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\ge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u(x_j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord mathnormal">u</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>. In simpler terms, if an apple is strictly preferred to a pear, then the number associated with the apple must be greater than the number associated with the pear.</p>
 <p><strong>Rationality in decision-making requires that a person chooses their most preferred option</strong>, i.e., the option with the highest utility. A person is considered rational if their choices reveal a consistent preference relationship that satisfies the axioms of reflexivity, completeness, and transitivity. However, there is ongoing debate about whether utility maximization is necessary, sufficient, or even compatible with rationality. Some argue that rationality should also involve reasoned scrutiny and may be broader or incompatible with utility maximization in certain contexts.</p>
 <p> </p>
 <h2 id="game-theory-framework">Game Theory Framework</h2>
@@ -532,8 +363,8 @@ interests.</p>
 </table>
 </center>
 <p>In our case players have those preferences:</p>
-<p>(flicCol, flicRow) $\approx_R$ (flocCol, flocRow) $\gtrsim_R$ (flocCol, flicRow) $\approx_R$ (flicCol, flicRow)</p>
-<p>(flicCol, flicRow) $\approx_C$ (flocCol, flocRow) $\gtrsim_C$ (flocCol, flicRow) $\approx_C$ (flicCol, flicRow)</p>
+<p>(flicCol, flicRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≈</mo><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\approx_R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6331em;vertical-align:-0.15em;"></span><span class="mrel"><span class="mrel">≈</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flocCol, flocRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flocCol, flicRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≈</mo><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\approx_R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6331em;vertical-align:-0.15em;"></span><span class="mrel"><span class="mrel">≈</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flicCol, flicRow)</p>
+<p>(flicCol, flicRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≈</mo><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">\approx_C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6331em;vertical-align:-0.15em;"></span><span class="mrel"><span class="mrel">≈</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flocCol, flocRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flocCol, flicRow) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≈</mo><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">\approx_C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6331em;vertical-align:-0.15em;"></span><span class="mrel"><span class="mrel">≈</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (flicCol, flicRow)</p>
 <p> </p>
 <h2 id="nash-equilibrium">Nash Equilibrium</h2>
 <p>Nash equilibrium is a concept in game theory that represents a <strong>stable state in a game where no player has an incentive to unilaterally deviate from their chosen strategy, given the strategies chosen by all other players</strong>.</p>
@@ -563,8 +394,8 @@ interests.</p>
 </table>
 </center>
 <p>To find the Nash equilibrium, we need to <strong>identify the strategies where neither player has an incentive to switch</strong>. In this case, the Nash equilibrium occurs when both players choose the &quot;Defect&quot; strategy (D). This is because if Player A chooses &quot;Cooperate&quot; (C), Player B's best response is to choose &quot;Defect&quot; (D) to maximize their own payoff. Similarly, if Player B chooses &quot;Cooperate&quot; (C), Player A's best response is to choose &quot;Defect&quot; (D). Since the strategy are:</p>
-<p>(A Defect, B Cooperate) $\gtrsim_A$ (A Cooperate, B Cooperate) $\gtrsim_A$ (A Defect, B Defect) $\gtrsim_A$ (A Cooperate, B Defect)</p>
-<p>(A Cooperate, B Defect) $\gtrsim_B$ (A Cooperate, B Cooperate) $\gtrsim_B$ (A Defect, B Defect) $\gtrsim_B$ (A Defect, B Cooperate)</p>
+<p>(A Defect, B Cooperate) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Cooperate, B Cooperate) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Defect, B Defect) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Cooperate, B Defect)</p>
+<p>(A Cooperate, B Defect) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Cooperate, B Cooperate) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Defect, B Defect) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≳</mo><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\gtrsim_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9592em;vertical-align:-0.2296em;"></span><span class="mrel"><span class="mrel amsrm">≳</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (A Defect, B Cooperate)</p>
 <p>Therefore, <strong>(D, D) is the Nash equilibrium</strong> in this game since no player has an incentive to unilaterally deviate from their strategy, given the strategy chosen by the other player.</p>
 <p> </p>
 <p>Let's consider another example of a game between two cars at an intersection, the payoff matrix represents the outcomes for each possible combination of actions. The actions available to each car are &quot;Go&quot; or &quot;Stop&quot; and the numbers in the matrix represent the payoffs (or utilities) received by Car A and Car B for each combination of actions.</p>
@@ -606,10 +437,27 @@ interests.</p>
 <li><strong>(Stop, Go)</strong>: If Car A chooses &quot;Stop&quot; and Car B chooses &quot;Go,&quot; neither car has an incentive to change their action. Car A receives a payoff of 0, which is better than any other option when Car B stops. Car B receives a payoff of 1, which is also better than any other option when Car A stops.</li>
 </ol>
 <p>In both cases, neither car can improve their payoff by unilaterally changing their action, leading to stable outcomes. Therefore, there are indeed two Nash equilibria in this game: (Go, Stop) and (Stop, Go).</p>
-<p>[DA FINIRE]</p>
+<p> </p>
+<h2 id="backward-induction">Backward Induction</h2>
+<p>Backward induction is a <strong>reasoning process that starts from the end of a sequential decision-making scenario and works backward to determine the optimal choices at each stage</strong>. It is commonly used in game theory to analyze strategic interactions between players.</p>
+<p>Let's consider a classic example known as the &quot;Centipede game&quot;. In this game, two players, Player 1 and Player 2, take turns deciding whether to continue or stop. The game begins with a pot of money that grows at each step. If Player 1 continues, the pot doubles, and Player 2 can either continue or stop. If Player 2 continues, the pot doubles again, and the game continues. However, if either player chooses to stop, the game ends, and the players split the money in the pot.</p>
+<p>To analyze this game using backward induction, we start from the last decision point, which is when the pot has reached its maximum value. At this point, Player 2, who is making the final decision, has an incentive to stop and claim their share of the money rather than continuing. Player 1, anticipating this, realizes that continuing will result in a smaller payoff, so they also have an incentive to stop at the previous stage.</p>
+<p>Following this backward reasoning, we conclude that both players should stop at every decision point, and the game ends with an equal split of the pot. By working backward and considering the consequences of each choice, we can determine the optimal strategy in this sequential game.</p>
+<p>Backward induction can also be applied to more complex scenarios, such as multi-stage negotiations, business strategies, or even long-term planning, where considering the future consequences of decisions is crucial for determining the best course of action.</p>
+<p> </p>
+<h2 id="questions-2">Questions</h2>
+<ol>
+<li>In the example of the game between Player A and Player B with the payoff matrix, what is the Nash equilibrium?</li>
+<li>Explain the concept of backward induction and its role in determining optimal choices in sequential decision-making scenarios.</li>
+<li>How does the concept of Nash equilibrium relate to the stability of strategies in a game? Provide an example.</li>
+<li>In the Centipede game, why do both players have an incentive to stop the game rather than continue?</li>
+<li>Discuss the potential applications of backward induction in real-life situations beyond game theory.</li>
+<li>Compare and contrast the concept of Nash equilibrium with the concept of Pareto efficiency in the context of decision-making.</li>
+</ol>
+<p> </p>
 <p> </p>
 <h1 id="trustworthy-ai">Trustworthy AI</h1>
-<p><strong>The &quot;Ethics Guidelines for Trustworthy AI&quot; document</strong>, prepared by the High-Level Expert Group on Artificial Intelligence set up by the European Commission, p<strong>rovides comprehensive guidelines for ensuring the ethical and responsible development and use of AI systems</strong>. It aims to promote AI that is lawful, ethical, and robust, while considering the potential risks and impacts on individuals and society as a whole. Let's explore the key points and principles outlined in the document.</p>
+<p><strong>The &quot;Ethics Guidelines for Trustworthy AI&quot; document</strong>, prepared by the High-Level Expert Group on Artificial Intelligence set up by the European Commission, <strong>provides comprehensive guidelines for ensuring the ethical and responsible development and use of AI systems</strong>. It aims to promote AI that is lawful, ethical, and robust, while considering the potential risks and impacts on individuals and society as a whole. Let's explore the key points and principles outlined in the document.</p>
 <p><strong>The idea of trustworthy AI is based on three fundamental requirements: AI should be lawful, ethical, and robust.</strong> These requirements should be met throughout the entire life cycle of an AI system. However, it is essential to acknowledge that AI systems can also have unintended harmful effects, even with good intentions.</p>
 <ul>
 <li>
@@ -705,6 +553,24 @@ List of Human Rights from the Universal Declaration of Human Rights:</p>
 <p>Moreover, the use of <strong>AI can contribute to polarization and fragmentation in the public sphere</strong>. The proliferation of sensational and fake news, driven by AI systems that capture user attention and exploit confirmation biases, can lead to divided societies. Additionally, governments can leverage AI for legitimate purposes, such as improving efficiency and services. However, there is a risk of employing AI to anticipate and control citizens' behavior, infringing upon individual liberties and interfering with the democratic process.</p>
 <p><strong>Unfairness, discrimination, and inequality are also concerns in AI-based decision making</strong>. The approaches to learning in AI systems can further illuminate these issues. Supervised learning, the most popular approach, involves training the machine using a labeled dataset where correct answers are provided in advance. Unsupervised learning focuses on identifying patterns in data without external instructions. Reinforcement learning incorporates rewards and penalties to train the system based on the outcomes of its own actions.</p>
 <p>The use of automated assessment systems can present problems even when their performance is not worse than that of humans. This is because automation reduces the costs associated with collecting, storing, and processing information about individuals for evaluation and decision-making. As a result, automation enables more persistent and pervasive mechanisms for assessment and control. With the advent of AI, personal data of all kinds can be used to analyze, predict, and influence human behavior, turning them into valuable commodities. Previously disregarded data, such as trails of online activities, now hold significant value.</p>
+<p> </p>
+<h2 id="cambridge-analytica">Cambridge Analytica</h2>
+<p>The Cambridge Analytica scandal has become a defining moment in the realm of data ethics, shedding light on the <strong>ethical implications of personal data exploitation and manipulation</strong>. This text examines the ethical dimensions of the Cambridge Analytica case, exploring the impact on privacy, informed consent, democratic processes, and the responsibility of technology companies in safeguarding user data.</p>
+<p><strong>Cambridge Analytica, a now-defunct political consulting firm, gained access to personal data of millions of Facebook users without their explicit consent</strong>. Through an app called &quot;thisisyourdigitallife,&quot; created by a third-party researcher, Aleksandr Kogan, Cambridge Analytica harvested vast amounts of user data, including personal information and psychological profiles. This data was subsequently used to develop targeted political advertisements and influence voter behavior during electoral campaigns, including the 2016 U.S. presidential election and the Brexit referendum.</p>
+<p>The ethical concerns surrounding Cambridge Analytica primarily revolve around privacy violations and the lack of informed consent:</p>
+<ul>
+<li>
+<p><strong>Users' personal data was obtained without their explicit knowledge or consent, undermining their privacy rights</strong>. Users had entrusted Facebook with their information, expecting it to be handled responsibly and securely. However, the unauthorized sharing of data violated this trust and raised questions about the protection of individuals' privacy in the digital age. Furthermore, <strong>the issue of informed consent arises, as users were not adequately informed about the potential consequences and risks associated with their data being shared with third parties</strong>. Transparency and clear communication about data practices are crucial for individuals to make informed decisions about their personal information, and the Cambridge Analytica case highlighted the importance of ensuring genuine consent in data collection and usage.</p>
+</li>
+<li>
+<p>Another significant ethical concern relates to the <strong>manipulation of public opinion and democratic processes</strong>. Cambridge Analytica's targeted advertising campaigns aimed to sway individuals' opinions and behavior through personalized content. By exploiting psychological profiles and deploying tailored messages, they sought to influence political outcomes, potentially undermining the integrity of democratic decision-making.</p>
+<p>This manipulation raises ethical questions regarding the fairness and authenticity of political processes. It challenges the principles of free and informed choice, as individuals were subjected to personalized messages designed to exploit their vulnerabilities, potentially distorting their perceptions and decisions. The ability to manipulate public opinion in this manner raises concerns about the ethical boundaries of utilizing personal data in political contexts.</p>
+</li>
+<li>
+<p>The Cambridge Analytica scandal also highlights the <strong>ethical responsibilities of technology companies in handling user data</strong>. Facebook faced criticism for its lax data governance practices, allowing unauthorized access to vast amounts of user data through third-party apps. Companies that collect and process personal data have an ethical duty to protect users' privacy, ensure data security, and be transparent about data practices.</p>
+</li>
+</ul>
+<p>Moreover, the responsible use of data by technology companies involves considering the potential societal impact of their products. The ethical obligations extend beyond legal compliance to encompass the proactive identification and mitigation of risks associated with data misuse. The Cambridge Analytica case underscores the need for robust ethical frameworks within technology companies to prevent unethical data practices and safeguard user interests.</p>
 <p> </p>
 <h2 id="profiling">Profiling</h2>
 <p>Profiling, facilitated by AI and Big Data technologies, allows individuals to be subjected to surveillance and influence in various cases and contexts based on a wider range of personal characteristics. These characteristics may include economic conditions, health status, place of residence, personal choices, online and offline behavior, and more. By correlating data about individuals with corresponding classifications and predictions, AI enhances the potential for profiling. <strong>Profiling involves inferring information about individuals or groups and making assessments and decisions based on that information.</strong></p>
@@ -885,5 +751,7 @@ List of Human Rights from the Universal Declaration of Human Rights:</p>
 <h2 id="automated-individual-decision-making-including-profiling-article-22">Automated individual decision-making, including profiling (Article 22)</h2>
 <p>Article 22 of the GDPR addresses automated individual decision-making, including profiling. It grants individuals the right not to be subject to decisions based solely on automated processing that significantly affects them. However, there are exceptions to this right. Automated decisions are allowed if they are necessary for entering into or performing a contract, authorized by applicable laws with suitable safeguards, or based on the explicit consent of the individual. The article also discusses conditions for the prohibition of automated decisions, such as the requirement that the decision is solely based on automated processing and includes profiling. Additionally, Article 21 addresses the right to object to profiling and direct marketing, providing individuals with the right to object to processing based on specific grounds. The article highlights the importance of providing information about automated decision-making to individuals, including meaningful information about the logic involved and the consequences of such processing. Different approaches to explaining automated decisions are discussed, including model explanation, model inspection, and outcome explanation. There is a need for accessible explanations for laypeople and consideration of factors like contrastive explanation, selective explanation, causal explanation, and social explanation. Providing information to users about input data, target values, and the consequences of automated assessments is also suggested.</p>
 
-</body>
-</html>
+        <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </body>
+    </html>

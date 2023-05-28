@@ -1,4 +1,46 @@
-﻿&nbsp;
+﻿# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Consequentialism](#consequentialism)
+  - [Utilitarianism](#utilitarianism)
+  - [Wealth Redistribution](#wealth-redistribution)
+  - [Act and Rule Utilitarianism](#act-and-rule-utilitarianism)
+  - [Act and Rule Utilitarianism in AI](#act-and-rule-utilitarianism-in-ai)
+  - [Popular Ethical Dilemmas](#popular-ethical-dilemmas)
+  - [Questions](#questions)
+- [Deontology - Kantian](#deontology---kantian)
+  - [Testing](#testing)
+  - [Disadvanges](#disadvanges)
+  - [Questions](#questions-1)
+- [Game Theory](#game-theory)
+  - [Game Theory Framework](#game-theory-framework)
+  - [Nash Equilibrium](#nash-equilibrium)
+  - [Backward Induction](#backward-induction)
+  - [Questions](#questions-2)
+- [Trustworthy AI](#trustworthy-ai)
+- [Human Right and Information Technology](#human-right-and-information-technology)
+- [AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
+  - [Risks and Benefits of AI](#risks-and-benefits-of-ai)
+  - [Cambridge Analytica](#cambridge-analytica)
+  - [Profiling](#profiling)
+  - [Individual and Social Cost](#individual-and-social-cost)
+- [AI in the GDPR](#ai-in-the-gdpr)
+  - [Territorial Scope (Article 3):](#territorial-scope-article-3)
+  - [Definitions (Article 4):](#definitions-article-4)
+  - [Data Protection Principles (Article 5):](#data-protection-principles-article-5)
+  - [Lawfulness of Processing (Article 6):](#lawfulness-of-processing-article-6)
+  - [Personal Data (Article 4(1)):](#personal-data-article-41)
+  - [Profiling (Article 4(2))](#profiling-article-42)
+  - [Consent (Article4(11))](#consent-article411)
+  - [Condition for Consent (Article 7)](#condition-for-consent-article-7)
+  - [Information to be provided to the data subject (Articles 13-14)](#information-to-be-provided-to-the-data-subject-articles-13-14)
+  - [Right to Erasure (Article 17)](#right-to-erasure-article-17)
+  - [Processing of special categories of personal data (Article 9)](#processing-of-special-categories-of-personal-data-article-9)
+  - [Automated individual decision-making, including profiling (Article 22)](#automated-individual-decision-making-including-profiling-article-22)
+
+
+&nbsp;
 
 &nbsp;
 
