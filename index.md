@@ -1,5 +1,5 @@
 ﻿**Table of Contents**
-Last Update: 28-05-2023
+Last Update: 31-05-2023
 
 - [Introduction](#introduction)
 - [Consequentialism](#consequentialism)
@@ -44,6 +44,7 @@ Last Update: 28-05-2023
 - [Fairness in algorithmic decision making (Summary)](#fairness-in-algorithmic-decision-making-summary)
 - [Do Artifacts Have Politics? (Seminar)](#do-artifacts-have-politics-seminar)
 - [Responsibility and Automation in Socio-Technical Systems (Seminar)](#responsibility-and-automation-in-socio-technical-systems-seminar)
+- [The Regulation of Online Targeted Advertising: Is Consent Enough?](#the-regulation-of-online-targeted-advertising-is-consent-enough)
 
 
 &nbsp;
@@ -882,3 +883,33 @@ In highly automated systems or AI systems, there is a gradual shift in liability
 
 Decision-Making Authority
 Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws.
+
+&nbsp;
+
+&nbsp;
+
+# The Regulation of Online Targeted Advertising: Is Consent Enough?
+
+Online advertising has become an integral part of the digital ecosystem, with various forms such as display and video ads, search ads, social media ads, in-app ads, and conversational ads. The process involves the collection and analysis of personal data, allowing advertisers to create targeted and personalized campaigns. However, concerns have been raised about the extent to which individuals' consent alone is sufficient to regulate this practice. This text explores the current state of online advertising, the role of consent in EU regulation, the limits of consent, and recent developments in EU law related to online advertising.
+
+1. Online Advertising: How It Works and the Current Ecosystem:
+This section provides an overview of the different forms of online advertising and the data pipeline involved. It explains how personal data is collected, processed, and used for extensive profiling and targeting purposes. The advancements in artificial intelligence (AI) and big data technologies enable advertisers to exploit a wide range of personal characteristics and derive new information about individuals, their interests, and behaviors.
+
+1. The Consent in EU Regulation:
+Here, the focus shifts to the role of consent in EU regulation, specifically under the General Data Protection Regulation (GDPR). Article 8 of the EU Charter of Fundamental Rights (EUCFR) establishes the right to the protection of personal data and emphasizes the need for consent or other legitimate bases for data processing. The GDPR further outlines the conditions for lawful processing, including consent, performance of a contract, and legitimate interests pursued by the controller or a third party.
+
+1. Limits of Consent and Two Proposals:
+This section explores the limitations of relying solely on consent as a legal basis for targeted advertising. It discusses the European Data Protection Board's (EDPB) opinion on targeting social media users, which distinguishes between observed data and inferred data. While consent is considered appropriate for observed data, legitimate interest may be a valid legal ground for targeting based on data volunteered directly by data subjects. Additionally, consent requirements for children and explicit consent for special categories of data are addressed.
+
+1. Recent Developments in EU Law: DSA, DMA, and Al Act:
+The text concludes by highlighting recent developments in EU law that are relevant to online advertising. The Digital Services Act (DSA), Digital Markets Act (DMA), and Artificial Intelligence Act (Al Act) aim to provide a comprehensive regulatory framework for digital services, including targeted advertising. These regulations seek to address concerns related to surveillance, privacy invasion, manipulation, and the impact of advertising on democratic values and equal access to opportunities.
+
+While consent plays a crucial role in regulating targeted advertising, its effectiveness as the sole basis for governing this practice is debatable. The complexity of data processing, the potential for discrimination or manipulation, and the societal implications call for a broader discussion on the regulation of online advertising. The recent developments in EU law reflect the ongoing efforts to strike a balance between commercial interests, individual rights, and societal well-being in the digital age.
+
+The Digital Services Act (DSA) and the Digital Markets Act (DMA) proposed by the European Union aim to reform digital markets and address issues related to targeted advertising and consumer consent. The E-privacy Regulation, part of these proposals, focuses on ensuring free consent by introducing the idea that consent may be expressed through the appropriate technical settings of a software application.
+
+The DMA identifies gatekeeper platforms, including advertising services, and imposes obligations on them to ensure fair commercial practices and consumer choice. It prohibits gatekeepers from processing personal data of end users for online advertising services without specific consent. Cross-use of personal data from different core platform services or other services provided by the gatekeeper is also prohibited unless the end user has given consent. The DMA's provisions would have a significant impact on the targeted advertising market by restricting the creation of consumer profiles through cross-referencing data.
+
+The Digital Services Act (DSA) addresses online platforms and their obligations regarding online advertising. It requires online platforms to ensure that recipients can clearly and unambiguously identify advertisements and the parties involved in presenting and paying for them.
+
+These legislative proposals focus on promoting transparency, consumer choice, and fair practices in the digital advertising ecosystem. By emphasizing the need for clear consent, identification of advertisements, and limitations on data processing, the DSA and DMA aim to address the shortcomings of current consent practices and protect consumers from potential harms associated with targeted advertising.
