@@ -1,33 +1,48 @@
 ﻿**Table of Contents**
 Last Update: 31-05-2023
 
-- [Introduction](#introduction)
-- [Consequentialism](#consequentialism)
+&nbsp;
+
+**Legenda**
+
+🟩: It seems correct
+
+🟨: To be checked again
+
+🟥: Copied & pasted summary
+
+&nbsp;
+
+- [🟩 Introduction](#-introduction)
+- [🟩 Consequentialism](#-consequentialism)
   - [Utilitarianism](#utilitarianism)
   - [Wealth Redistribution](#wealth-redistribution)
   - [Act and Rule Utilitarianism](#act-and-rule-utilitarianism)
   - [Act and Rule Utilitarianism in AI](#act-and-rule-utilitarianism-in-ai)
   - [Popular Ethical Dilemmas](#popular-ethical-dilemmas)
   - [Questions](#questions)
-- [Deontology - Kantian](#deontology---kantian)
+- [🟩 Deontology - Kantian](#-deontology---kantian)
   - [Testing](#testing)
   - [Disadvanges](#disadvanges)
   - [Questions](#questions-1)
-- [Game Theory](#game-theory)
+- [🟨 Game Theory](#-game-theory)
   - [Game Theory Framework](#game-theory-framework)
   - [Nash Equilibrium](#nash-equilibrium)
   - [Backward Induction](#backward-induction)
   - [Questions](#questions-2)
-- [Ethics Guidelines for Trustworthy AI](#ethics-guidelines-for-trustworthy-ai)
+- [🟥 Ethics Guidelines for Trustworthy AI](#-ethics-guidelines-for-trustworthy-ai)
+  - [Chapter I](#chapter-i)
+  - [Chapter II](#chapter-ii)
+  - [Chapter III](#chapter-iii)
   - [Methods To Realize Trustworthy AI](#methods-to-realize-trustworthy-ai)
-- [Human Right and Information Technology](#human-right-and-information-technology)
+- [🟥 Human Right and Information Technology](#-human-right-and-information-technology)
   - [The Universal Declaration of Human Rights](#the-universal-declaration-of-human-rights)
-- [AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
+- [🟥 AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#-ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
   - [Risks and Benefits of AI](#risks-and-benefits-of-ai)
   - [Cambridge Analytica](#cambridge-analytica)
   - [Profiling](#profiling)
   - [Individual and Social Cost](#individual-and-social-cost)
-- [AI in the GDPR](#ai-in-the-gdpr)
+- [🟨 AI in the GDPR](#-ai-in-the-gdpr)
   - [Territorial Scope (Article 3):](#territorial-scope-article-3)
   - [Definitions (Article 4):](#definitions-article-4)
   - [Data Protection Principles (Article 5):](#data-protection-principles-article-5)
@@ -40,18 +55,18 @@ Last Update: 31-05-2023
   - [Right to Erasure (Article 17)](#right-to-erasure-article-17)
   - [Processing of special categories of personal data (Article 9)](#processing-of-special-categories-of-personal-data-article-9)
   - [Automated individual decision-making, including profiling (Article 22)](#automated-individual-decision-making-including-profiling-article-22)
-- [Text analytics in the legal domain (Summary)](#text-analytics-in-the-legal-domain-summary)
-- [Fairness in algorithmic decision making (Summary)](#fairness-in-algorithmic-decision-making-summary)
-- [Do Artifacts Have Politics? (Seminar)](#do-artifacts-have-politics-seminar)
 - [Responsibility and Automation in Socio-Technical Systems (Seminar)](#responsibility-and-automation-in-socio-technical-systems-seminar)
-- [The Regulation of Online Targeted Advertising: Is Consent Enough?](#the-regulation-of-online-targeted-advertising-is-consent-enough)
+- [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
+- [🟥 Text analytics in the legal domain](#-text-analytics-in-the-legal-domain)
+- [🟥 Fairness in algorithmic decision making (Summary)](#-fairness-in-algorithmic-decision-making-summary)
+- [🟥 Do Artifacts Have Politics? (Seminar)](#-do-artifacts-have-politics-seminar)
 
 
 &nbsp;
 
 &nbsp;
 
-# Introduction
+# 🟩 Introduction
 
 **Morality** or **ethics** refers to the principles and values that guide human behavior and determine what is considered right or wrong. When making decisions or evaluating the actions of others, individuals can take either a self-interested perspective, focusing on their own particular interests, or they can be motivated by the belief that an action is morally right, regardless of its impact on their self-interest. Morality is influenced by social norms and is often learned through socialization processes within a society. People absorb the moral standards considered obligatory in their society and make them their own. This raises the question of whether morality is solely a matter of social learning and imitation. Can individuals develop a critical attitude toward their society's morality? And if so, what is the basis for this critical attitude-reason or intuition?
 
@@ -88,7 +103,7 @@ Morality intersects with other normative systems, such as law, religion, traditi
 
 &nbsp;
 
-# Consequentialism
+# 🟩 Consequentialism
 
 The concept of consequentialism revolves around the idea that an **action is morally required if it leads to the best possible outcome compared to its alternatives**. In other words, if the positive outcomes outweigh the negative outcomes to the greatest extent and if it **produces the highest utility**, then the action is considered morally required. Consequentialism treats morality as an **optimization problem, where the goal is to maximize the good and minimize the bad**. There are various kinds of consequentialism, each addressing questions such as what things should be maximized, how many of them there are, how much each matters, and whether a single utility function can combine gains and losses across multiple valuable goals.
 
@@ -214,7 +229,7 @@ Finally, Judith Jarvis Thomson's surgeon case presents a moral dilemma where a *
 
 &nbsp;
 
-# Deontology - Kantian
+# 🟩 Deontology - Kantian
 
 **Deontology**, also known as **Kantian ethics**, is a moral framework that **emphasizes the inherent rightness or wrongness of actions, regardless of their consequences**. It is contrasted with consequentialism, which evaluates actions based on the outcomes they produce.
 
@@ -304,7 +319,7 @@ While deontology provides a strong framework for moral decision-making, it also 
 
 &nbsp;
 
-# Game Theory
+# 🟨 Game Theory
 
 **Game theory is a field that analyzes the strategic interactions between rational decision-makers**. It has applications in various disciplines, including economics, political science, and law. In the context of law, game theory provides a framework to understand and analyze how legal actors, such as judges, lawyers, and litigants, make decisions and interact with each other. In the usual framework used by economists, an agent is faced with a set of alternatives from which they must choose. These alternatives can be represented as $X = x_1, x_2, ..., x_n,$ for example, a set of fruits like "Big apple" "Small apple" and "Pear" The agent has a preference relation represented by the symbol \"$\gtrsim$\" (read as "is weakly preferred to"). For instance, $x_i$ $\gtrsim$ $x_j$ means that $x_i$ is at least as valuable or desired as $x_j$. We can also use the notation $x_i$ $\ge$ $x_j$ to represent the same relationship, and $x_i \ge x_j$ to represent strict preference ($x_i$ is strictly preferred to $x_j$).
 
@@ -435,12 +450,21 @@ Backward induction can also be applied to more complex scenarios, such as multi-
 
 &nbsp;
 
-# Ethics Guidelines for Trustworthy AI
+# 🟥 Ethics Guidelines for Trustworthy AI
 
-**The "Ethics Guidelines for Trustworthy AI" document**, prepared by the High-Level Expert Group on Artificial Intelligence set up by the European Commission, **provides comprehensive guidelines for ensuring the ethical and responsible development and use of AI systems**. It aims to promote AI that is lawful, ethical, and robust, while considering the potential risks and impacts on individuals and society as a whole. Let's explore the key points and principles outlined in the document.
+**The "Ethics Guidelines for Trustworthy AI" document**, prepared by the High-Level Expert Group on Artificial Intelligence set up **by the European Commission**, **provides comprehensive guidelines for ensuring the ethical and responsible development and use of AI systems**.
 
 **The idea of trustworthy AI is based on three fundamental requirements: AI should be lawful, ethical, and robust.** These requirements should be met throughout the entire life cycle of an AI system. However, it is essential to acknowledge that AI systems can also have unintended harmful effects, even with good intentions.
-- **Chapter I of the guidelines focuses on ethical principles that should guide the development, deployment, and use of AI systems**. Based on human rights, there are four ethical principles that are commonly derived:
+
+&nbsp;
+
+![Trustworthy AI](imgs/Trust.jpg)
+
+&nbsp;
+
+## Chapter I
+
+**Ethical principles that should guide the development, deployment, and use of AI systems**. Based on human rights, there are four ethical principles that are commonly derived:
    1. **Respect for Autonomy**: This principle recognizes the inherent dignity and freedom of individuals to make autonomous decisions about their lives. It emphasizes the importance of informed consent, privacy, and the right to self-determination. AI systems should respect and uphold individual autonomy, ensuring that users have control over their personal information and the ability to make meaningful choices.
    2. **Beneficence**: This principle focuses on promoting the well-being of individuals and society as a whole. AI systems should be designed and used in ways that maximize benefits and minimize harm. They should aim to enhance human capabilities, contribute to societal progress, and address societal challenges such as inequality, poverty, and access to resources.
    3. **Justice**: The principle of justice emphasizes fairness, equity, and non-discrimination. AI systems should be developed and deployed in a manner that ensures equal treatment and opportunity for all individuals, regardless of their race, gender, religion, or other characteristics. It involves avoiding biases, stereotypes, and discriminatory practices in the design and application of AI technologies.
@@ -448,7 +472,11 @@ Backward induction can also be applied to more complex scenarios, such as multi-
 
    These four ethical principles provide a framework for considering the ethical implications of AI systems from a human rights perspective. By incorporating these principles into the design and deployment of AI technologies, we can strive for a more ethical and human-centered approach to AI development.
 
-- **Chapter II provides guidance on realizing trustworthy AI**.The chapter outline seven key requirements that AI systems should meet in order to be considered trustworthy:
+&nbsp;
+
+## Chapter II
+
+**Guidance on realizing trustworthy AI**.The chapter outline seven key requirements that AI systems should meet in order to be considered trustworthy:
    1. **Human agency and oversight**: AI systems should be designed to support human decision-making and enable users to understand and control their AI interactions.
    2. **Technical robustness and safety**: AI systems should be secure, resilient, and reliable, ensuring their safe and trustworthy operation throughout their lifecycle.
    3. **Privacy and data governanc**e: AI systems should respect privacy rights and protect personal data, following the principles of data minimization, purpose limitation, and transparency.
@@ -457,7 +485,11 @@ Backward induction can also be applied to more complex scenarios, such as multi-
    6. **Societal and environmental well-being**: AI systems should contribute to sustainable development, be socially beneficial, and consider the environmental impact throughout their lifecycle.
    7. **Accountability**: The actors involved in the development and deployment of AI systems should be accountable for their actions, and mechanisms for redress and complaint should be in place.
 
-- **Chapter III introduces the concept of Trustworthy AI assessment**. It recommends adopting an assessment list tailored to the specific use case of an AI system. This assessment should not be viewed as a checklist but as an ongoing process of evaluating and implementing requirements and involving stakeholders.
+&nbsp;
+
+## Chapter III
+
+**Concept of Trustworthy AI assessment**. It recommends adopting an assessment list tailored to the specific use case of an AI system. This assessment should not be viewed as a checklist but as an ongoing process of evaluating and implementing requirements and involving stakeholders.
 
 The European Commission's approach to AI, as outlined in their communications, focuses on increasing investments in AI, preparing for socio-economic changes, and ensuring an appropriate ethical and legal framework to strengthen European values.
 
@@ -497,7 +529,7 @@ By combining technical and non-technical methods, stakeholders can work towards 
 
 &nbsp;
 
-# Human Right and Information Technology
+# 🟥 Human Right and Information Technology
 
 In the era of the ICT (Information and Communication Technology) revolution, we find ourselves in a precarious navigation, facing both great opportunities and significant risks. We stand at a crossroad, where multiple futures are possible. To plan ahead, we need to consider various aspects: hard science to understand the current state of things, technology to explore what is available and possible, social science to anticipate potential scenarios, and normative knowledge to determine the values and norms guiding our decisions.
 
@@ -553,7 +585,7 @@ List of Human Rights from the Universal Declaration of Human Rights:
 
 &nbsp;
 
-# AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities
+# 🟥 AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities
 
 AI, algorithmic decision making, and Big Data have brought significant advancements and opportunities to various domains. The Internet and AI infrastructure have contributed to improved efficiency and effectiveness in areas like smart cities and e-health. They have enabled the global generation and distribution of knowledge and solutions. Moreover, AI has facilitated the discovery of new correlations, allowing doctors to provide better diagnoses and personalized therapies. This technology has also resulted in cost savings, increased productivity, and value creation. Firms can anticipate market trends and make more efficient decisions, while consumers can make better-informed choices and access personalized services.
 
@@ -635,7 +667,7 @@ However, it is important to note that algorithms can also be more controllable t
 
 &nbsp;
 
-# AI in the GDPR
+# 🟨 AI in the GDPR
 
 AI, or Artificial Intelligence, plays a significant role within the framework of the General Data Protection Regulation (GDPR). **While the GDPR does not explicitly mention AI or related concepts, many of its provisions are applicable to AI systems**. In this explanation, we will delve into various aspects of AI in relation to the GDPR, covering the conceptual framework, data protection principles, legal bases, transparency, data subjects' rights, automated decision making, and privacy by design.
 
@@ -805,57 +837,6 @@ Article 22 of the GDPR addresses automated individual decision-making, including
 
 &nbsp;
 
-# Text analytics in the legal domain (Summary)
-
-The provided text describes a master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
-
-The main goal of the project is to explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
-
-The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
-
-The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
-
-The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
-
-The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
-
-&nbsp;
-
-&nbsp;
-
-# Fairness in algorithmic decision making (Summary)
-
-The article discusses fairness in algorithmic decision-making, focusing on the combination of artificial intelligence (AI) and big data. It examines the potential causes of unfairness in AI systems, including biases and discriminatory outcomes. The article highlights that AI systems have the potential to be more precise and impartial than humans in many domains but also points out the possibility of algorithmic mistakes and discrimination.
-
-The authors discuss different ways in which unfairness can arise in algorithmic decision-making systems. These include the reproduction of human biases and prejudices in the training data, biases embedded in the predictors used by the system, biased training sets, and data sets that do not reflect the statistical composition of the population. The challenges in challenging the unfairness of automated decision-making systems are also discussed, noting that it can be difficult to challenge these systems due to the reliance on statistical correlations and the higher burden of evidence required compared to the algorithms themselves.
-
-The article presents the case of the COMPAS predictive system and the Loomis case, which involved the use of the COMPAS system in a sentencing decision. The challenges and criticisms raised regarding the accuracy and fairness of the COMPAS system are examined, as well as the rebuttals to those criticisms. The article concludes by suggesting that while there are challenges and limitations, the use of automated decision-making should not be categorically excluded. Instead, a combination of human and automated judgments, transparency, and the development of methods to analyze and review automated decision-making should be pursued to find the best balance between human expertise and AI capabilities.
-
-&nbsp;
-
-&nbsp;
-
-# Do Artifacts Have Politics? (Seminar)
-
-In this presentation, we delve into the intriguing question of whether artifacts have politics. We examine the social and moral implications of technological artifacts and their role in shaping human actions, perceptions, and ethical decision-making. Through various examples, we will explore how artifacts can become politically or morally charged, challenging the traditional understanding of morality as solely a human affair.
-
-Some Examples:
-- **Robert Moses's Overpasses**: One notable example of artifacts with political consequences is the overpasses designed by Robert Moses, a prominent urban planner. Moses intentionally constructed overpasses over Long Island's parkways that were too low for buses to pass through. This design choice limited access to Jones Beach Island since only car owners could easily reach the beaches. As a result, racial minorities and low-income groups, who primarily relied on public transit, were effectively excluded from enjoying this widely acclaimed public park (Winner, 1980).
-- **Technological Mediation**: Technological artifacts not only fulfill functional purposes but also shape users' actions and perceptions. They act as impactful mediators that influence how people interact with the world. For instance, obstetric ultrasound, beyond its functional role of visualizing the unborn child in the womb, mediates the relations between expecting parents and the fetus. It translates the fetus into a separate living being, introduces medical norms, and even influences decisions regarding abortion (Verbeek, 2011).
-- **Moralizing Technologies**: Instead of solely relying on moralizing humans, we can also consider moralizing our material environment through technologies. Metro barriers that require passengers to purchase tickets before entering the subway exemplify how technologies are designed to shape moral action and decision-making. By integrating moral considerations into the design of technologies, we can actively influence human behavior and promote responsible actions (Verbeek, 2011).
-
-We move **from a perspective of passive responsibility**, where individuals are held accountable for the effects of their actions, **to active responsibility**. Active responsibility involves preventing negative effects and realizing positive outcomes through the design of technologies. This paradigm shift aligns with the concept of value-sensitive design, where moral considerations and values are integral requirements in the development of technologies (Bovens, 1998).
-
-The **invisibility of computer operations often generates policy vacuums when it comes to utilizing computer technology effectively**. The actions and decisions made by sophisticated AI systems remain largely invisible, making it challenging to address ethical considerations (Moor, 1985). It becomes crucial to critically evaluate the invisibility of abuse, programming values, and complex calculations in technology to ensure transparency and ethical conduct.
-
-Technology design goes beyond functional innovation. Designers have the responsibility to materialize morality in their artifacts. By considering the mediating role of technologies, designers can anticipate the ethical consequences and potential emergent forms of mediation. The ethics of engineering design should embrace the moral charge of technological products and redefine the moral responsibilities of designers (Van de Poel and Royakkers, 2011).
-
-Technological artifacts possess political and moral dimensions, challenging the notion that morality is solely a human affair. They shape human actions, mediate interactions, and influence ethical decision-making. By acknowledging the moral implications of artifacts, we can strive for active responsibility in designing technologies, fostering transparency, and promoting ethical conduct.
-
-&nbsp;
-
-&nbsp;
-
 # Responsibility and Automation in Socio-Technical Systems (Seminar)
 
 In the field of complex socio-technical organizations, allocating responsibilities among participants is a challenging task. The role of humans interacting with highly automated systems is a crucial consideration. Determining who bears responsibility for accidents in highly automated systems is a complex ethical and legal issue. This text explores the concept of responsibility and automation within the context of air traffic management.
@@ -888,7 +869,7 @@ Effective decision-making authority is a crucial aspect of socio-technical syste
 
 &nbsp;
 
-# The Regulation of Online Targeted Advertising: Is Consent Enough?
+# 🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?
 
 Online advertising has become an integral part of the digital ecosystem, with various forms such as display and video ads, search ads, social media ads, in-app ads, and conversational ads. The process involves the collection and analysis of personal data, allowing advertisers to create targeted and personalized campaigns. However, concerns have been raised about the extent to which individuals' consent alone is sufficient to regulate this practice. This text explores the current state of online advertising, the role of consent in EU regulation, the limits of consent, and recent developments in EU law related to online advertising.
 
@@ -913,3 +894,54 @@ The DMA identifies gatekeeper platforms, including advertising services, and imp
 The Digital Services Act (DSA) addresses online platforms and their obligations regarding online advertising. It requires online platforms to ensure that recipients can clearly and unambiguously identify advertisements and the parties involved in presenting and paying for them.
 
 These legislative proposals focus on promoting transparency, consumer choice, and fair practices in the digital advertising ecosystem. By emphasizing the need for clear consent, identification of advertisements, and limitations on data processing, the DSA and DMA aim to address the shortcomings of current consent practices and protect consumers from potential harms associated with targeted advertising.
+
+&nbsp;
+
+&nbsp;
+
+# 🟥 Text analytics in the legal domain
+
+The provided text describes a master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
+
+The main goal of the project is to explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
+
+The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
+
+The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
+
+The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
+
+The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
+
+&nbsp;
+
+&nbsp;
+
+# 🟥 Fairness in algorithmic decision making (Summary)
+
+The article discusses fairness in algorithmic decision-making, focusing on the combination of artificial intelligence (AI) and big data. It examines the potential causes of unfairness in AI systems, including biases and discriminatory outcomes. The article highlights that AI systems have the potential to be more precise and impartial than humans in many domains but also points out the possibility of algorithmic mistakes and discrimination.
+
+The authors discuss different ways in which unfairness can arise in algorithmic decision-making systems. These include the reproduction of human biases and prejudices in the training data, biases embedded in the predictors used by the system, biased training sets, and data sets that do not reflect the statistical composition of the population. The challenges in challenging the unfairness of automated decision-making systems are also discussed, noting that it can be difficult to challenge these systems due to the reliance on statistical correlations and the higher burden of evidence required compared to the algorithms themselves.
+
+The article presents the case of the COMPAS predictive system and the Loomis case, which involved the use of the COMPAS system in a sentencing decision. The challenges and criticisms raised regarding the accuracy and fairness of the COMPAS system are examined, as well as the rebuttals to those criticisms. The article concludes by suggesting that while there are challenges and limitations, the use of automated decision-making should not be categorically excluded. Instead, a combination of human and automated judgments, transparency, and the development of methods to analyze and review automated decision-making should be pursued to find the best balance between human expertise and AI capabilities.
+
+&nbsp;
+
+&nbsp;
+
+# 🟥 Do Artifacts Have Politics? (Seminar)
+
+In this presentation, we delve into the intriguing question of whether artifacts have politics. We examine the social and moral implications of technological artifacts and their role in shaping human actions, perceptions, and ethical decision-making. Through various examples, we will explore how artifacts can become politically or morally charged, challenging the traditional understanding of morality as solely a human affair.
+
+Some Examples:
+- **Robert Moses's Overpasses**: One notable example of artifacts with political consequences is the overpasses designed by Robert Moses, a prominent urban planner. Moses intentionally constructed overpasses over Long Island's parkways that were too low for buses to pass through. This design choice limited access to Jones Beach Island since only car owners could easily reach the beaches. As a result, racial minorities and low-income groups, who primarily relied on public transit, were effectively excluded from enjoying this widely acclaimed public park (Winner, 1980).
+- **Technological Mediation**: Technological artifacts not only fulfill functional purposes but also shape users' actions and perceptions. They act as impactful mediators that influence how people interact with the world. For instance, obstetric ultrasound, beyond its functional role of visualizing the unborn child in the womb, mediates the relations between expecting parents and the fetus. It translates the fetus into a separate living being, introduces medical norms, and even influences decisions regarding abortion (Verbeek, 2011).
+- **Moralizing Technologies**: Instead of solely relying on moralizing humans, we can also consider moralizing our material environment through technologies. Metro barriers that require passengers to purchase tickets before entering the subway exemplify how technologies are designed to shape moral action and decision-making. By integrating moral considerations into the design of technologies, we can actively influence human behavior and promote responsible actions (Verbeek, 2011).
+
+We move **from a perspective of passive responsibility**, where individuals are held accountable for the effects of their actions, **to active responsibility**. Active responsibility involves preventing negative effects and realizing positive outcomes through the design of technologies. This paradigm shift aligns with the concept of value-sensitive design, where moral considerations and values are integral requirements in the development of technologies (Bovens, 1998).
+
+The **invisibility of computer operations often generates policy vacuums when it comes to utilizing computer technology effectively**. The actions and decisions made by sophisticated AI systems remain largely invisible, making it challenging to address ethical considerations (Moor, 1985). It becomes crucial to critically evaluate the invisibility of abuse, programming values, and complex calculations in technology to ensure transparency and ethical conduct.
+
+Technology design goes beyond functional innovation. Designers have the responsibility to materialize morality in their artifacts. By considering the mediating role of technologies, designers can anticipate the ethical consequences and potential emergent forms of mediation. The ethics of engineering design should embrace the moral charge of technological products and redefine the moral responsibilities of designers (Van de Poel and Royakkers, 2011).
+
+Technological artifacts possess political and moral dimensions, challenging the notion that morality is solely a human affair. They shape human actions, mediate interactions, and influence ethical decision-making. By acknowledging the moral implications of artifacts, we can strive for active responsibility in designing technologies, fostering transparency, and promoting ethical conduct.
