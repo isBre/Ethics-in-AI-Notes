@@ -1,5 +1,5 @@
 ﻿**Table of Contents**
-Last Update: 31-05-2023
+Last Update: 01-06-2023
 
 &nbsp;
 
@@ -34,7 +34,7 @@ Last Update: 31-05-2023
   - [Chapter I](#chapter-i)
   - [Chapter II](#chapter-ii)
   - [Questions](#questions-3)
-- [🟥 Human Right and Information Technology](#-human-right-and-information-technology)
+- [🟩 Human Right and Information Technology](#-human-right-and-information-technology)
   - [The Universal Declaration of Human Rights](#the-universal-declaration-of-human-rights)
 - [🟥 AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#-ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
   - [Risks and Benefits of AI](#risks-and-benefits-of-ai)
@@ -504,57 +504,94 @@ The document is **divided into three chapters**. The first chapter establishes e
 
 &nbsp;
 
-# 🟥 Human Right and Information Technology
+# 🟩 Human Right and Information Technology
 
-In the era of the ICT (Information and Communication Technology) revolution, we find ourselves in a precarious navigation, facing both great opportunities and significant risks. We stand at a crossroad, where multiple futures are possible. To plan ahead, we need to consider various aspects: hard science to understand the current state of things, technology to explore what is available and possible, social science to anticipate potential scenarios, and normative knowledge to determine the values and norms guiding our decisions.
+In the era of the ICT (Information and Communication Technology) revolution, we find ourselves in a **precarious navigation, facing both great opportunities and significant risks**. We stand at a crossroad, where multiple futures are possible. To plan ahead, we need to consider various aspects: hard science to understand the current state of things, technology to explore what is available and possible, social science to anticipate potential scenarios, and normative knowledge to determine the values and norms guiding our decisions.
 
 **Normative knowledge** encompasses a range of ethical theories, such as computer ethics, machine ethics, and AI ethics. Additionally, regulations related to data protection, consumer protection, competition law, civil liability, and more play a crucial role. Moreover, the link between human/fundamental rights and social values is vital in shaping the norms governing information technologies.
 
-When discussing the impact of information technologies on human rights, the concept of **trustworthy AI** emerges. Trustworthy AI involves several key principles, including respect for *human autonomy*, *prevention of harm*, *fairness*, and *explicability*. These principles aim to ensure that AI systems are designed and used in a manner that upholds human rights.
+When discussing the impact of information technologies on human rights, the concept of **trustworthy AI** emerges. [Trustworthy AI](#🟩-ethics-guidelines-for-trustworthy-ai) involves several key principles, including respect for *human autonomy*, *prevention of harm*, *fairness*, and *explicability*. **These principles aim to ensure that AI systems are designed and used in a manner that protects human rights**.
 
 **AI4 People** focuses on enabling human self-realization without undermining human abilities, enhancing human agency while retaining human responsibility, and fostering social cohesion while preserving human self-determination. It emphasizes the importance of technology supporting human development rather than replacing or devaluing human capacities.
 
 In contemplating the impact of information technologies on human rights, it is crucial to consider a broader perspective that encompasses human values. Human rights can be seen as primarily ethical demands, not merely confined to legal frameworks. They involve ensuring freedoms, including liberty and social rights, that satisfy specific "threshold conditions" of significance and social impact. Human rights can impose imperfect duties, which require advocacy, balance, and consideration, as well as perfect duties, which demand legal enforcement.
 
-Information and communication technologies can both interfere with and contribute to the protection and implementation of human rights. Furthermore, they have the potential to give rise to new human rights or add new dimensions to existing rights by assigning importance to certain human opportunities and enabling society to actualize them. Examples include the right to access the internet, right to basic income, and right to new medical technologies.
+**Information and communication technologies can both interfere with and contribute to the protection and implementation of human rights**. Furthermore, they have the potential to give rise to new human rights or add new dimensions to existing rights by assigning importance to certain human opportunities and enabling society to actualize them. Examples include the right to access the internet, right to basic income, and right to new medical technologies.
 
 &nbsp;
 
 ## The Universal Declaration of Human Rights
 
-**The Universal Declaration of Human Rights** is a historic document adopted by the United Nations General Assembly in 1948. It serves as a global framework for the protection and promotion of fundamental human rights and freedoms. The Declaration consists of 30 articles that outline the rights and principles that every person is entitled to, regardless of their nationality, race, religion, gender, or any other status.
-List of Human Rights from the Universal Declaration of Human Rights:
+**The Universal Declaration of Human Rights** is a historic document adopted by the **United Nations General Assembly in 1948**. It serves as a global framework for the protection and promotion of fundamental human rights and freedoms. The Declaration consists of **30 articles** that outline the rights and principles that every person is entitled to, regardless of their nationality, race, religion, gender, or any other status. List of Human Rights from the Universal Declaration of Human Rights:
 
-1. Right to equality and dignity.
-2. Right to freedom without discrimination.
-3. Right to life, liberty, and security.
-4. Prohibition of slavery and servitude.
-5. Prohibition of torture and cruel treatment.
-6. Right to recognition as a person before the law.
-7. Right to equal protection under the law.
-8. Right to an effective remedy for rights violations.
-9. Prohibition of arbitrary arrest, detention, or exile.
-10. Right to a fair and public hearing by an impartial tribunal.
-11. Presumption of innocence and right to a fair trial.
-12. Right to privacy and protection against interference.
-13. Right to freedom of movement and residence.
-14. Right to seek and enjoy asylum.
-15. Right to a nationality and freedom from arbitrary deprivation.
-16. Right to marriage and family, free consent, and protection.
-17. Right to own property and protection against arbitrary deprivation.
-18. Right to freedom of thought, conscience, and religion.
-19. Right to freedom of opinion, expression, and information.
-20. Right to freedom of peaceful assembly and association.
-21. Right to participate in government and equal access to public service.
-22. Right to social security and economic, social, and cultural rights.
-23. Right to work, just conditions, equal pay, and trade unions.
-24. Right to rest, leisure, and reasonable working hours.
-25. Right to a standard of living, including food, housing, and healthcare.
-26. Right to education, free and compulsory in the early stages.
-27. Right to participate in cultural life and enjoy scientific advancements.
-28. Right to a social and international order for rights realization.
-29. Duties to the community and limitations on rights for public welfare.
-30. Prohibition of using rights to undermine the rights of others or the UN's purposes.
+1. **All human beings are born free and equal in dignity and rights**. They should act towards one another in a spirit of brotherhood.
+2. Everyone is entitled to the rights and freedoms without any distinction, such as race, color, sex, language, religion, etc.
+3. **Everyone has the right to life, liberty, and security of person**.
+   
+   The right to life ensures protection against arbitrary deprivation of life and promotes the value and dignity of every human being. The right to liberty ensures freedom from unlawful detention or imprisonment, allowing individuals to exercise their rights and pursue their aspirations. The right to security guarantees protection against physical harm, violence, and threats, enabling individuals to live without fear and enjoy a sense of well-being. Upholding this right is essential for the preservation of human dignity, fostering individual growth, and promoting peaceful and inclusive societies.
+4. Slavery and the slave trade are prohibited in all forms.
+5. No one shall be subjected to torture, cruel, inhuman, or degrading treatment or punishment.
+6. Everyone has the right to recognition as a person before the law.
+7. **All are equal before the law and entitled to equal protection against discrimination**.
+   
+   Al individuals are entitled to be treated with fairness, dignity, and respect, without any form of distinction or prejudice. This right prohibits discrimination based on various grounds, including race, color, sex, language, religion, political or other opinion, national or social origin, property, birth, or any other status. It guarantees that every person has equal access to opportunities, benefits, and protections, regardless of their background or characteristics. Upholding the right to equality and nondiscrimination is essential for fostering inclusive societies, promoting social cohesion, and ensuring that everyone can fully participate in all aspects of life without fear of unjust treatment or marginalization. It serves as a cornerstone for building a world where diversity is celebrated, and every individual's rights and dignity are upheld.
+
+8. **Everyone has the right to an effective remedy for violations of their rights**.
+   
+   It ensures that individuals have access to justice and can seek redress for violations of their rights. This right guarantees that victims have the opportunity to obtain a fair and impartial hearing, have their grievances heard, and receive appropriate reparations. It encompasses the right to an independent and competent judiciary, legal representation, and the availability of effective legal remedies. Upholding the right to an effective remedy is essential for holding perpetrators accountable, addressing injustices, and ensuring that individuals have recourse when their rights are violated.
+9.  No one shall be subjected to arbitrary arrest, detention, or exile.
+10. **Everyone is entitled to a fair and public hearing by an independent tribunal**.
+   
+      It guarantees that individuals have the opportunity to present their case, be heard, and have their arguments and evidence considered by an impartial tribunal. This right ensures that legal proceedings are conducted in a transparent and equitable manner, allowing individuals to defend their rights and interests. The right to a hearing encompasses principles such as the right to be informed, the right to legal representation, and the right to challenge evidence and cross-examine witnesses. Upholding the right to a hearing is essential for ensuring justice, upholding the rule of law, and safeguarding individuals' fundamental rights.
+11. **Everyone is presumed innocent until proven guilty in a public trial**.
+
+      It asserts that an individual is to be considered innocent until proven guilty by a court of law. This principle places the burden of proof on the prosecution, requiring them to present sufficient evidence to establish guilt beyond a reasonable doubt. The presumption of innocence safeguards an individual's reputation, dignity, and fundamental rights during criminal proceedings. It ensures fair treatment, protects against arbitrary detention, and underscores the principle that it is better to acquit a guilty person than to convict an innocent one.
+12. **No one shall be subjected to arbitrary interference with their privacy, family, home, or correspondence**.
+
+      It encompasses the individual's autonomy and control over their personal information, actions, and private spaces. It safeguards individuals from unwarranted intrusion, surveillance, or disclosure of their private affairs. The right to privacy is essential for the development of personal identity, fostering intimate relationships, and exercising freedom of thought, expression, and association. It extends to various aspects of life, including communications, personal data, home, and family life. Protecting the right to privacy is crucial in the digital age, where technological advancements can potentially erode personal privacy. Upholding this right ensures that individuals can maintain their personal boundaries, make autonomous choices, and live free from unwarranted interference or surveillance by both public and private entities.
+
+13. Everyone has the right to freedom of movement and the right to leave and return to their country.
+14. Everyone has the right to seek asylum from persecution, except for non-political crimes.
+15. Everyone has the right to a nationality and cannot be arbitrarily deprived of it.
+16. Everyone has the right to marry and found a family, and marriage requires free and full consent.
+17. **Everyone has the right to own property and not be arbitrarily deprived of it**.
+   
+      Individuals have the right to own, use, and dispose of property, both tangible and intangible, without arbitrary interference. This right provides a foundation for economic stability, individual autonomy, and the ability to participate fully in society. It safeguards against unjust confiscation, expropriation, or arbitrary deprivation of property. The right to property encourages economic growth, innovation, and investment, while also promoting social justice and the equitable distribution of resources. Respecting and protecting this right fosters a conducive environment for individuals to thrive, pursue their aspirations, and contribute to the well-being of their communities.
+
+18. Everyone has the right to freedom of thought, conscience, and religion.
+19. **Everyone has the right to freedom of opinion and expression**.
+
+      It guarantees individuals the right to hold and express their opinions freely, without interference or censorship. This right encompasses the freedom to seek, receive, and impart information and ideas through any media or platform. It fosters open dialogue, the exchange of diverse perspectives, and the free flow of information, contributing to informed decision-making, public participation, and the advancement of knowledge and innovation. Upholding freedom of opinion, expression, and information is crucial for promoting transparency, accountability, and the protection of human rights.
+20. **Everyone has the right to freedom of peaceful assembly and association**.
+    
+      Right to gather peacefully, express their opinions, and engage in collective activities. This right enables people to come together, form organizations, and associate with others for various purposes, such as social, cultural, political, or professional interests. Freedom of assembly and association is vital for fostering community engagement, facilitating collective action, and advancing social progress. It allows individuals to express their collective voice, advocate for their rights, and participate in democratic processes. Upholding this right ensures a vibrant civil society, promotes diversity of thought, and strengthens democratic principles.
+
+21. **Everyone has the right to participate in the government of their country and equal access to public service**.
+   
+      The right to take part in government is a fundamental democratic right that ensures individuals have the opportunity to participate in decision-making processes that affect their lives. It encompasses the right to vote, run for public office, and engage in political activities. This right promotes inclusive and representative governance, allowing citizens to have a say in shaping policies and holding their elected representatives accountable. Upholding the right to take part in government fosters active citizenship, strengthens democratic institutions, and ensures that power is exercised with the consent and involvement of the people.
+
+22. **Everyone has the right to social security and economic, social, and cultural rights**.
+
+      The right to social security is a fundamental human right that guarantees individuals' access to essential social protections. It encompasses the right to adequate healthcare, income support, and social assistance, among other social benefits. This right ensures that individuals have the means to meet their basic needs, live a dignified life, and recover from unexpected hardships. Upholding the right to social security is crucial for reducing poverty, promoting social inclusion, and creating a more equitable society. It provides a safety net that supports individuals and communities, contributing to their overall well-being and enabling them to fully participate in social, economic, and cultural life.
+
+23. **Everyone has the right to work, just conditions of work, equal pay, and the right to join trade unions**.
+
+      The right to work is a fundamental human right that ensures individuals have the opportunity to freely choose their employment and enjoy just and favorable conditions in the workplace. It encompasses the right to fair wages, equal pay for equal work, safe and healthy working conditions, and the freedom to form and join trade unions. This right promotes economic empowerment, dignity, and the realization of one's full potential. Upholding the right to work is essential for reducing poverty, promoting social stability, and fostering inclusive and sustainable development. It recognizes the inherent value and contribution of every individual in the labor market and seeks to eliminate discrimination and exploitation in all forms of employment.
+   
+24. Everyone has the right to rest, leisure, and reasonable working hours.
+25. **Everyone has the right to a standard of living adequate for health and well-being, including food, housing, and medical care**.
+
+      The right to an adequate standard of living is a fundamental human right that encompasses access to basic necessities such as food, clothing, housing, and healthcare. It ensures that individuals and their families can live a dignified life, free from poverty and deprivation. This right also includes the right to social security, ensuring a safety net for those who are unable to support themselves. Upholding the right to an adequate standard of living is crucial for promoting social equality, well-being, and the overall development of individuals and communities. It requires the implementation of policies and measures aimed at reducing inequalities and ensuring that basic needs are met for all.
+26. **Everyone has the right to education, free and compulsory in the elementary stages**.
+
+      The right to education is a fundamental human right that ensures every individual has access to quality education without discrimination. It encompasses the right to free and compulsory primary education, as well as equal access to secondary and higher education. This right promotes personal development, empowers individuals with knowledge and skills, and contributes to social and economic progress. Upholding the right to education requires providing inclusive and equitable educational opportunities, ensuring adequate resources and qualified teachers, and eliminating barriers to education such as poverty, gender inequality, and disability discrimination. It is through education that individuals can fully realize their potential and participate actively in society.
+
+27. **Everyone has the right to participate in the cultural life of the community and the protection of their intellectual property**.
+
+      The right to culture is a fundamental human right that recognizes the importance of preserving, developing, and expressing one's cultural identity. It encompasses the freedom to participate in cultural life, access and enjoy cultural heritage, and contribute to the cultural diversity of society. This right promotes the enrichment of individuals and communities through artistic, literary, and scientific endeavors, fostering creativity and intercultural understanding. Upholding the right to culture requires respecting and protecting cultural rights, supporting cultural expressions, and ensuring equal opportunities for all to engage in cultural activities. It acknowledges the intrinsic value of culture and its contribution to the well-being and flourishing of individuals and society as a whole.
+28. Everyone is entitled to a social and international order where human rights can be realized.
+29. Everyone has duties to the community, and their rights may be limited for the purpose of respecting the rights of others and meeting moral, public order, and general welfare requirements.
+30. Nothing in the Declaration shall be interpreted as allowing any person, group, or state to engage in activities aimed at destroying the rights and freedoms outlined.
 
 &nbsp;
 
