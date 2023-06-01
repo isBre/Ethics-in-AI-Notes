@@ -36,14 +36,16 @@ Last Update: 01-06-2023
   - [Questions](#questions-3)
 - [🟩 Human Right and Information Technology](#-human-right-and-information-technology)
   - [The Universal Declaration of Human Rights](#the-universal-declaration-of-human-rights)
+  - [Questions](#questions-4)
 - [🟩 AI, Algorithmic Decision Making, and Big Data: Risks and Opportunities](#-ai-algorithmic-decision-making-and-big-data-risks-and-opportunities)
   - [AI Risks and Benefits](#ai-risks-and-benefits)
   - [Profiling, Influence and Manipulation](#profiling-influence-and-manipulation)
     - [Cambridge Analytica](#cambridge-analytica)
   - [Surveillance Capitalism or Surveillance State?](#surveillance-capitalism-or-surveillance-state)
-  - [Surveillance State: the Chinese Social credit systems](#surveillance-state-the-chinese-social-credit-systems)
+    - [Surveillance State: the Chinese Social credit systems](#surveillance-state-the-chinese-social-credit-systems)
   - [Individual and Social Cost](#individual-and-social-cost)
   - [Conclusions](#conclusions)
+  - [Questions](#questions-5)
 - [🟨 AI in the GDPR](#-ai-in-the-gdpr)
   - [Territorial Scope (Article 3):](#territorial-scope-article-3)
   - [Definitions (Article 4):](#definitions-article-4)
@@ -57,11 +59,12 @@ Last Update: 01-06-2023
   - [Right to Erasure (Article 17)](#right-to-erasure-article-17)
   - [Processing of special categories of personal data (Article 9)](#processing-of-special-categories-of-personal-data-article-9)
   - [Automated individual decision-making, including profiling (Article 22)](#automated-individual-decision-making-including-profiling-article-22)
-- [Responsibility and Automation in Socio-Technical Systems (Seminar)](#responsibility-and-automation-in-socio-technical-systems-seminar)
 - [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
-- [🟥 Text analytics in the legal domain](#-text-analytics-in-the-legal-domain)
-- [🟥 Fairness in algorithmic decision making (Summary)](#-fairness-in-algorithmic-decision-making-summary)
-- [🟥 Do Artifacts Have Politics? (Seminar)](#-do-artifacts-have-politics-seminar)
+- [🟥 Text analytics in the legal domain (Claudette)](#-text-analytics-in-the-legal-domain-claudette)
+- [Seminars](#seminars)
+  - [🟥 Responsibility and Automation in Socio-Technical Systems (Seminar)](#-responsibility-and-automation-in-socio-technical-systems-seminar)
+  - [🟥 Fairness in algorithmic decision making](#-fairness-in-algorithmic-decision-making)
+  - [🟥 Do Artifacts Have Politics?](#-do-artifacts-have-politics)
 
 
 &nbsp;
@@ -596,6 +599,19 @@ In contemplating the impact of information technologies on human rights, it is c
 29. Everyone has duties to the community, and their rights may be limited for the purpose of respecting the rights of others and meeting moral, public order, and general welfare requirements.
 30. Nothing in the Declaration shall be interpreted as allowing any person, group, or state to engage in activities aimed at destroying the rights and freedoms outlined.
 
+## Questions
+
+1. How does the concept of trustworthy AI contribute to the protection of human rights?
+2. What role does normative knowledge, including computer ethics and AI ethics, play in shaping the development and use of information technologies?
+3. How can information and communication technologies both interfere with and contribute to the protection and implementation of human rights?
+4. In what ways can information technologies give rise to new human rights or add new dimensions to existing rights?
+5. How does the Universal Declaration of Human Rights provide a global framework for the protection and promotion of fundamental human rights?
+6. How does the right to privacy apply to the digital age and the use of information technologies?
+7. What are the key principles of trustworthy AI, and how do they ensure the protection of human rights?
+8. How can information technologies contribute to the realization of economic, social, and cultural rights?
+9. What are the potential risks and challenges associated with the use of information technologies in relation to human rights?
+10. How can regulations and legal frameworks related to data protection, consumer protection, and civil liability ensure the safeguarding of human rights in the era of ICT revolution?
+
 &nbsp;
 
 &nbsp;
@@ -661,7 +677,7 @@ The rapid development of systems based on the massive collection of information 
 
 &nbsp;
 
-## Surveillance State: the Chinese Social credit systems
+### Surveillance State: the Chinese Social credit systems
 
 **The Chinese Social credit system has garnered significant attention as a prime example of a Surveillance State**. **This system collects vast amounts of data about citizens and assigns them scores that quantify their social value and reputation**. It operates through the aggregation and analysis of personal information, which covers various aspects of individuals' lives, including financial behavior, political engagement, involvement in legal proceedings, and social actions.
 
@@ -704,6 +720,19 @@ To address these concerns:
 - Lastly, there is an indirect **interest in fair algorithmic competition**, where individuals seek to avoid market power abuses resulting from exclusive control over vast amounts of data and technologies.
 
 To safeguard these interests, it is crucial to have robust mechanisms in place that promote transparency, accountability, and oversight in the use of AI. This includes addressing algorithmic biases, ensuring explanations for algorithmic decisions, and preventing unfair and discriminatory practices. By striking a balance between technological advancement and ethical considerations, societies can harness the benefits of AI while mitigating potential harms.
+
+## Questions
+
+1. What are some potential benefits of AI and Big Data in various sectors?
+2. How can advancements in AI and Big Data lead to job loss and inequality?
+3. What are the risks associated with AI and Big Data in terms of illegal activities?
+4. How does the widespread use of AI and Big Data raise concerns about surveillance and manipulation?
+5. What are the effects of AI on polarization and fragmentation in the public sphere?
+6. How did the Cambridge Analytica scandal shed light on the ethical implications of personal data exploitation and manipulation?
+7. What were the privacy violations and lack of informed consent in the Cambridge Analytica case?
+8. What are the ethical responsibilities of technology companies in handling user data?
+9. What is the debate surrounding surveillance capitalism and the surveillance state?
+10. How does the Chinese Social credit system exemplify the risks and concerns of a Surveillance State?
 
 &nbsp;
 
@@ -879,38 +908,6 @@ Article 22 of the GDPR addresses automated individual decision-making, including
 
 &nbsp;
 
-# Responsibility and Automation in Socio-Technical Systems (Seminar)
-
-In the field of complex socio-technical organizations, allocating responsibilities among participants is a challenging task. The role of humans interacting with highly automated systems is a crucial consideration. Determining who bears responsibility for accidents in highly automated systems is a complex ethical and legal issue. This text explores the concept of responsibility and automation within the context of air traffic management.
-
-Understanding Responsibility
-To illustrate the concept of responsibility, let us consider the case of a ship captain, referred to as X. X was responsible for the safety of the passengers and crew. However, due to his irresponsible behavior, including getting drunk during the last voyage, the ship was lost with all aboard. Although rumors of his insanity circulated, the doctors held him responsible for his actions. X was found criminally responsible for his negligent conduct and legally responsible for the loss of life and property. Despite still being alive, he carries moral responsibility for the deaths of many women and children (Hart, 1970).
-
-Liability in Socio-Technical Systems
-Liability in socio-technical systems can be categorized into various forms, including legal, civil, criminal, and administrative liability. Each form encompasses different aspects, such as fault liability (negligent or intentional actions) and special cases specific to certain contexts. It is essential to understand these liability frameworks when examining responsibility and automation in air traffic management.
-
-The Future of Air Traffic Management
-Over the next 30 years, the development of new generation air traffic management systems is expected. These systems will be highly automated, aiming to enhance capacity, safety, efficiency, and sustainability. They will operate with varying degrees of human supervision or even without any direct human involvement. This increased automation poses important questions about the allocation of responsibilities and the role of humans in such systems.
-
-Implications of Automation
-Automation in air traffic management entails the delegation of tasks from operators to technology. Humans will assume the roles of controllers and supervisors, operating in a hybrid agency alongside machines. Machine intelligence and autonomy will play a significant role, challenging operators to cope with the complexity introduced by advanced technology. It is important to note that automation is not an all-or-nothing concept but rather a spectrum with different levels of automation.
-
-Level of Automation and Liability Risk
-The level of automation directly impacts liability risks. As the level of automation increases, the technology provider assumes more liability, while the human operator's liability decreases. However, the use of technologies with intermediate levels of automation can result in high liability risks for both the technology provider and the human operator. Striking a balance between automation and liability is crucial to ensure accountability and mitigate risks effectively.
-
-Fragmentation of Tasks and Liability
-In socio-technical systems, the fragmentation of tasks can lead to uncertainty and complexity in procedures. For human operators, it becomes challenging to determine how and by whom each task should be carried out, resulting in a high liability risk for negligence. Likewise, technology providers face difficulties in designing human-machine interfaces that adequately support decision-making and provide comprehensive information. They also bear a high product liability risk due to design and information defects.
-
-Liability Shift in Highly Automated Systems
-In highly automated systems or AI systems, there is a gradual shift in liability from individual operators to the organizations developing, using, and maintaining the technology. This liability shift can be attributed to product liability, organizational or no-fault liability, and vicarious liability for faults of employees. As automation advances, it is crucial to assess liability as early as possible in the technology's life cycle, considering the role of technology in accidents.
-
-Decision-Making Authority
-Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws.
-
-&nbsp;
-
-&nbsp;
-
 # 🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?
 
 Online advertising has become an integral part of the digital ecosystem, with various forms such as display and video ads, search ads, social media ads, in-app ads, and conversational ads. The process involves the collection and analysis of personal data, allowing advertisers to create targeted and personalized campaigns. However, concerns have been raised about the extent to which individuals' consent alone is sufficient to regulate this practice. This text explores the current state of online advertising, the role of consent in EU regulation, the limits of consent, and recent developments in EU law related to online advertising.
@@ -941,7 +938,7 @@ These legislative proposals focus on promoting transparency, consumer choice, an
 
 &nbsp;
 
-# 🟥 Text analytics in the legal domain
+# 🟥 Text analytics in the legal domain (Claudette)
 
 The provided text describes a master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
 
@@ -959,7 +956,41 @@ The text concludes by mentioning the development of an online server for Claudet
 
 &nbsp;
 
-# 🟥 Fairness in algorithmic decision making (Summary)
+# Seminars
+
+&nbsp;
+
+## 🟥 Responsibility and Automation in Socio-Technical Systems (Seminar)
+
+In the field of complex socio-technical organizations, allocating responsibilities among participants is a challenging task. The role of humans interacting with highly automated systems is a crucial consideration. Determining who bears responsibility for accidents in highly automated systems is a complex ethical and legal issue. This text explores the concept of responsibility and automation within the context of air traffic management.
+
+Understanding Responsibility
+To illustrate the concept of responsibility, let us consider the case of a ship captain, referred to as X. X was responsible for the safety of the passengers and crew. However, due to his irresponsible behavior, including getting drunk during the last voyage, the ship was lost with all aboard. Although rumors of his insanity circulated, the doctors held him responsible for his actions. X was found criminally responsible for his negligent conduct and legally responsible for the loss of life and property. Despite still being alive, he carries moral responsibility for the deaths of many women and children (Hart, 1970).
+
+Liability in Socio-Technical Systems
+Liability in socio-technical systems can be categorized into various forms, including legal, civil, criminal, and administrative liability. Each form encompasses different aspects, such as fault liability (negligent or intentional actions) and special cases specific to certain contexts. It is essential to understand these liability frameworks when examining responsibility and automation in air traffic management.
+
+The Future of Air Traffic Management
+Over the next 30 years, the development of new generation air traffic management systems is expected. These systems will be highly automated, aiming to enhance capacity, safety, efficiency, and sustainability. They will operate with varying degrees of human supervision or even without any direct human involvement. This increased automation poses important questions about the allocation of responsibilities and the role of humans in such systems.
+
+Implications of Automation
+Automation in air traffic management entails the delegation of tasks from operators to technology. Humans will assume the roles of controllers and supervisors, operating in a hybrid agency alongside machines. Machine intelligence and autonomy will play a significant role, challenging operators to cope with the complexity introduced by advanced technology. It is important to note that automation is not an all-or-nothing concept but rather a spectrum with different levels of automation.
+
+Level of Automation and Liability Risk
+The level of automation directly impacts liability risks. As the level of automation increases, the technology provider assumes more liability, while the human operator's liability decreases. However, the use of technologies with intermediate levels of automation can result in high liability risks for both the technology provider and the human operator. Striking a balance between automation and liability is crucial to ensure accountability and mitigate risks effectively.
+
+Fragmentation of Tasks and Liability
+In socio-technical systems, the fragmentation of tasks can lead to uncertainty and complexity in procedures. For human operators, it becomes challenging to determine how and by whom each task should be carried out, resulting in a high liability risk for negligence. Likewise, technology providers face difficulties in designing human-machine interfaces that adequately support decision-making and provide comprehensive information. They also bear a high product liability risk due to design and information defects.
+
+Liability Shift in Highly Automated Systems
+In highly automated systems or AI systems, there is a gradual shift in liability from individual operators to the organizations developing, using, and maintaining the technology. This liability shift can be attributed to product liability, organizational or no-fault liability, and vicarious liability for faults of employees. As automation advances, it is crucial to assess liability as early as possible in the technology's life cycle, considering the role of technology in accidents.
+
+Decision-Making Authority
+Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws.
+
+&nbsp;
+
+## 🟥 Fairness in algorithmic decision making
 
 The article discusses fairness in algorithmic decision-making, focusing on the combination of artificial intelligence (AI) and big data. It examines the potential causes of unfairness in AI systems, including biases and discriminatory outcomes. The article highlights that AI systems have the potential to be more precise and impartial than humans in many domains but also points out the possibility of algorithmic mistakes and discrimination.
 
@@ -969,9 +1000,7 @@ The article presents the case of the COMPAS predictive system and the Loomis cas
 
 &nbsp;
 
-&nbsp;
-
-# 🟥 Do Artifacts Have Politics? (Seminar)
+## 🟥 Do Artifacts Have Politics?
 
 In this presentation, we delve into the intriguing question of whether artifacts have politics. We examine the social and moral implications of technological artifacts and their role in shaping human actions, perceptions, and ethical decision-making. Through various examples, we will explore how artifacts can become politically or morally charged, challenging the traditional understanding of morality as solely a human affair.
 
