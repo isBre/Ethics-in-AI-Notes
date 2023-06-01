@@ -1,4 +1,4 @@
-﻿**Table of Contents**
+﻿
 Last Update: 01-06-2023
 
 &nbsp;
@@ -13,6 +13,7 @@ Last Update: 01-06-2023
 
 &nbsp;
 
+**Table of Contents**
 - [🟩 Introduction](#-introduction)
 - [🟩 Consequentialism](#-consequentialism)
   - [Utilitarianism](#utilitarianism)
