@@ -1,5 +1,5 @@
 ﻿
-Last Update: 01-06-2023
+Last Update: 02-06-2023
 
 &nbsp;
 
@@ -48,18 +48,18 @@ Last Update: 01-06-2023
   - [Conclusions](#conclusions)
   - [Questions](#questions-5)
 - [🟨 AI in the GDPR](#-ai-in-the-gdpr)
-  - [Territorial Scope (Article 3):](#territorial-scope-article-3)
-  - [Definitions (Article 4):](#definitions-article-4)
-  - [Data Protection Principles (Article 5):](#data-protection-principles-article-5)
-  - [Lawfulness of Processing (Article 6):](#lawfulness-of-processing-article-6)
-  - [Personal Data (Article 4(1)):](#personal-data-article-41)
-  - [Profiling (Article 4(2))](#profiling-article-42)
-  - [Consent (Article4(11))](#consent-article411)
-  - [Condition for Consent (Article 7)](#condition-for-consent-article-7)
-  - [Information to be provided to the data subject (Articles 13-14)](#information-to-be-provided-to-the-data-subject-articles-13-14)
-  - [Right to Erasure (Article 17)](#right-to-erasure-article-17)
-  - [Processing of special categories of personal data (Article 9)](#processing-of-special-categories-of-personal-data-article-9)
-  - [Automated individual decision-making, including profiling (Article 22)](#automated-individual-decision-making-including-profiling-article-22)
+  - [Article 3 - Territorial Scope](#article-3---territorial-scope)
+  - [Article 4 - Definitions](#article-4---definitions)
+    - [Article 4.1 - Personal Data](#article-41---personal-data)
+    - [Article 4.4 - Profiling](#article-44---profiling)
+    - [Article 4.11 - Consent](#article-411---consent)
+  - [Article 5 - Data Protection Principle](#article-5---data-protection-principle)
+  - [Article 6 - Lawfulness of Processing](#article-6---lawfulness-of-processing)
+  - [Article 7 - Condition for Consent](#article-7---condition-for-consent)
+  - [Article 9 - Processing of special categories of personal data](#article-9---processing-of-special-categories-of-personal-data)
+  - [Article 13-14 - Information to be provided to the data subject](#article-13-14---information-to-be-provided-to-the-data-subject)
+  - [Article 17 - Right to Erasure](#article-17---right-to-erasure)
+  - [Article 22 - Automated individual decision-making, including profiling](#article-22---automated-individual-decision-making-including-profiling)
 - [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
 - [🟥 Text analytics in the legal domain (Claudette)](#-text-analytics-in-the-legal-domain-claudette)
 - [Seminars](#seminars)
@@ -741,18 +741,18 @@ To safeguard these interests, it is crucial to have robust mechanisms in place t
 
 # 🟨 AI in the GDPR
 
-AI, or Artificial Intelligence, plays a significant role within the framework of the General Data Protection Regulation (GDPR). **While the GDPR does not explicitly mention AI or related concepts, many of its provisions are applicable to AI systems**. In this explanation, we will delve into various aspects of AI in relation to the GDPR, covering the conceptual framework, data protection principles, legal bases, transparency, data subjects' rights, automated decision making, and privacy by design.
+AI, or Artificial Intelligence, plays a significant role within the framework of the General Data Protection Regulation (GDPR). **While the GDPR does not explicitly mention AI or related concepts, many of its provisions are applicable to AI systems**. The GDPR, unlike the previous Data Protection Directive of 1995, incorporates terms related to the internet, such as "Internet," "social networks," "website," and "links." **The focus of the GDPR is primarily on addressing challenges emerging from the internet, which were not considered in the earlier directive**. Nonetheless, numerous provisions within the GDPR are relevant to AI. In this explanation, we will delve into various aspects of AI in relation to the GDPR, covering the conceptual framework, data protection principles, legal bases, transparency, data subjects' rights, automated decision making, and privacy by design.
 
-The GDPR, unlike the previous Data Protection Directive of 1995, incorporates terms related to the internet, such as "Internet," "social networks," "website," and "links." However, it does not explicitly mention "Artificial Intelligence" or any closely associated terms. The focus of the GDPR is primarily on addressing challenges emerging from the internet, which were not considered in the earlier directive. Nonetheless, numerous provisions within the GDPR are relevant to AI.
+
 
 &nbsp;
 
-## Territorial Scope (Article 3):
+## Article 3 - Territorial Scope
 **The GDPR applies to the processing of personal data in the context of activities conducted by controllers or processors located within the European Union (EU)**. It also applies to the processing of personal data of individuals who are within the EU, even if the controller or processor is located outside the EU. This applies to situations where goods or services are offered to individuals in the EU or their behavior is monitored within the EU.
 
 &nbsp;
 
-## Definitions (Article 4):
+## Article 4 - Definitions
 The GDPR provides several definitions that are essential to understanding its provisions. For instance:
 - **Personal data** refers to any information relating to an identified or identifiable natural person (data subject). Identifiable information can include names, identification numbers, location data, online identifiers, or factors specific to the person's identity.
 - **Processing** encompasses any operation performed on personal data, whether automated or not.
@@ -767,57 +767,35 @@ Here are some examples:
 
 &nbsp;
 
-## Data Protection Principles (Article 5):
-The GDPR establishes several principles that guide the processing of personal data:
-1. Lawfulness, fairness, and transparency.
-2. Purpose limitation.
-3. Data minimization.
-4. Data accuracy.
-5. Storage limitation.
-6. Integrity and confidentiality.
-7. Accountability principle.
-
-&nbsp;
-
-## Lawfulness of Processing (Article 6):
-Processing of personal data is deemed lawful if at least one of the following conditions is met:
-1. Consent from the data subject has been obtained.
-2. Processing is necessary for the performance of a contract or pre-contractual measures.
-3. Processing is necessary to comply with a legal obligation.
-4. Processing is necessary to protect vital interests.
-5. Processing is carried out in the public interest or official authority.
-6. Processing is necessary for legitimate interests, except when overridden by the rights and freedoms of the data subject.
-
-&nbsp;
-
-## Personal Data (Article 4(1)):
-The GDPR defines personal data as any information relating to an identified or identifiable natural person. **Identifiability** depends on the existence of means reasonably likely to be used for reidentification, considering factors such as costs, time required, available technology, and technological developments.
+### Article 4.1 - Personal Data
+The GDPR defines personal data as any information relating to an identified or identifiable natural person: **Identifiability** depends on the existence of means reasonably likely to be used for reidentification, considering factors such as costs, time required, available technology, and technological developments.
 
 **Pseudonymisation** involves substituting identifiers in personal data with pseudonyms. However, if the link between the pseudonym and the identifying data can be reconstructed using additional information, the pseudonymised data is still considered personal data.
 
 When it comes to AI and the GDPR definition of personal data, two key issues are raised:
 
-- First, there is the "re-personalization" of anonymous data, which refers to the **reidentification** of individuals associated with such data. AI and computational statistics methods can increase the identifiability of apparently anonymous data, allowing connections to be made with the individuals involved. Numerous cases have demonstrated the reidentification of supposedly anonymous datasets, revealing sensitive information about individuals, such as medical records, browsing history, or preferences.
+- First, there is the "re-personalization" of anonymous data, which refers to the **reidentification** of individuals associated with such data. **AI and computational statistics methods can increase the identifiability of apparently anonymous data, allowing connections to be made with the individuals involved**. Numerous cases have demonstrated the reidentification of supposedly anonymous datasets, revealing sensitive information about individuals, such as medical records, browsing history, or preferences.
 
    The reidentification of data subjects is often based on statistical correlations between nonidentified data and personal data related to the same individuals. For example, matching deidentified hospital admission information with the governor's date of birth, ZIP code, and gender enabled the reidentification of the governor's health records. Similarly, anonymized movie ratings in a Netflix price database could be reidentified by linking them to non-anonymous ratings in IMDb.
 
    To address reidentification, there are two approaches. The first involves ensuring that data is deidentified in ways that make it more challenging to reidentify the data subject. The second approach focuses on implementing security processes and measures for the release of data to prevent reidentification.
 
-- Another issue is the **inference** of further personal information from existing personal data. AI systems can infer new information about data subjects by applying algorithmic models to their personal data. The question arises as to whether the inferred information should be considered as new personal data, distinct from the original data. For example, inferring an individual's sexual orientation from facial features or personality type from online activity. If the inferred information is deemed new personal data, automated inferences would trigger the same consequences as processing personal data under the GDPR.
+- Another issue is the **inference** of further personal information from existing personal data. **AI systems can infer new information about data subjects by applying algorithmic models to their personal data**. The question arises as to whether the inferred information should be considered as new personal data, distinct from the original data. For example, inferring an individual's sexual orientation from facial features or personality type from online activity. If the inferred information is deemed new personal data, automated inferences would trigger the same consequences as processing personal data under the GDPR.
 
 Here are some examples:
 - **Re-personalisation of anonymous data (reidentification)**: Imagine a healthcare research institution that collects anonymized medical records from a large group of individuals for analysis. Through AI and advanced data linkage techniques, it becomes possible to reidentify specific individuals by linking the anonymized data with other available information such as publicly available datasets or social media profiles. This reidentification process can potentially breach the anonymity of the data and reintroduce personal identifiers, making it a concern under the GDPR.
+  
 - **Inference of further personal information**: Suppose an e-commerce platform collects personal data such as customers' purchase history, browsing patterns, and demographic information. By applying AI algorithms and data analytics, the platform can infer additional personal information about its customers. For example, based on a customer's purchase preferences, browsing behavior, and location data, the platform may infer their interests, hobbies, or lifestyle choices. These inferences create new personal information that goes beyond the explicitly provided data, and they may have implications under the GDPR, as individuals have the right to be aware of and have control over such inferences. 
 
 &nbsp;
 
-## Profiling (Article 4(2))
+### Article 4.4 - Profiling
 
-Article 4(2) of the General Data Protection Regulation (GDPR) defines **profiling as any form of automated processing of personal data that involves using the data to evaluate certain personal aspects of a natural person**. This includes analyzing or predicting aspects related to the person's work performance, economic situation, health, personal preferences, interests, reliability, behavior, location, or movements.
+Article 4(4) of the General Data Protection Regulation (GDPR) defines **profiling as any form of automated processing of personal data that involves using the data to evaluate certain personal aspects of a natural person**. This includes analyzing or predicting aspects related to the person's work performance, economic situation, health, personal preferences, interests, reliability, behavior, location, or movements.
 
-Profiling, although not explicitly mentioning AI, typically involves the use of AI technologies for processing. It aims to classify individuals into categories or groups based on inferred features. It involves gathering information about individuals and evaluating their characteristics or behavior patterns to categorize them and make predictions about their abilities, interests, or likely behavior.
+**Profiling, although not explicitly mentioning AI, typically involves the use of AI technologies for processing**. It aims to classify individuals into categories or groups based on inferred features. It involves gathering information about individuals and evaluating their characteristics or behavior patterns to categorize them and make predictions about their abilities, interests, or likely behavior.
 
-The advancement of AI and Big Data has significantly increased the opportunities for profiling. Profiling often relies on machine learning algorithms trained on large datasets that link certain features of individuals to specific outcomes. Once trained, these algorithms can be used to make predictions for new individuals based on their input data.
+**The advancement of AI and Big Data has significantly increased the opportunities for profiling**. Profiling often relies on machine learning algorithms trained on large datasets that link certain features of individuals to specific outcomes. Once trained, these algorithms can be used to make predictions for new individuals based on their input data.
 
 For example, AI-based profiling can be used to determine the likelihood of heart disease for insurance applicants based on their health records, habits, or social conditions. It can also assess the creditworthiness of loan applicants by considering their financial history, online activity, and social standing. Furthermore, it can predict the likelihood of reoffending for convicted individuals based on their criminal history, personality traits (identified through personality tests), and personal background. These predictions may trigger automated determinations related to insurance pricing, loan approvals, or parole decisions.
 
@@ -833,22 +811,81 @@ There has been a discussion about granting data subjects a general right to "**r
 
 &nbsp;
 
-## Consent (Article4(11))
+### Article 4.11 - Consent
 
 In the context of AI-based profiling, consent plays a crucial role. **Consent refers to the freely given, specific, informed, and unambiguous indication of a data subject's wishes to allow the processing of their personal data**. Controllers must be able to demonstrate that the data subject has consented to the processing of their personal data. Consent should be separate from other matters, presented clearly, and in plain language. Data subjects also have the right to withdraw their consent at any time, and withdrawing consent should be as easy as giving it.
 
 &nbsp;
 
-## Condition for Consent (Article 7)
-To ensure that consent is valid, the GDPR lays out certain conditions in Article 7. Here are the key points:
-1. The controller (the entity responsible for processing personal data) must be able to demonstrate that the data subject has consented to the processing of their personal data.
-2. If the consent is part of a written declaration that also covers other matters, the request for consent should be presented in a distinguishable manner from the other matters. It should be easily accessible, intelligible, and written in clear and plain language. Any part of the declaration that violates the GDPR should not be binding.
-3. The data subject has the right to withdraw their consent at any time. The withdrawal should not affect the lawfulness of processing based on consent before its withdrawal. The data subject must be informed of this right before giving consent, and it should be as easy to withdraw consent as it is to give it.
-4. When assessing whether consent is freely given, the GDPR emphasizes the importance of considering whether the performance of a contract or the provision of a service is conditional on the data subject's consent to the processing of personal data that is not necessary for the performance of that contract.
+## Article 5 - Data Protection Principle
+The GDPR establishes several principles that guide the processing of personal data:
+
+1. **Lawfulness, Fairness and Transparency** - processed lawfully, fairly and in a transparent manner in relation to the data subject.
+   
+2. **Purpose Limitation** - collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes.
+   
+3. **Data Minimisation** - adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed.
+   
+4. **Accuracy** - accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay.
+   
+5. **Storage Limitation** - kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject.
+   
+6. **Integrity and confidenciality** - processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures.
+   
+7. **Accauntability** - The controller shall be responsible for, and be able to demonstrate compliance with.
 
 &nbsp;
 
-## Information to be provided to the data subject (Articles 13-14)
+## Article 6 - Lawfulness of Processing
+
+Processing shall be lawful only if and to the extent that at least one of the following applies:
+
+1. **The data subject has given consent** to the processing of his or her personal data for one or more specific purposes.
+   
+   e.g. A social media platform asks its users to provide consent for processing their personal data to personalize their news feed based on their interests and preferences. Users can explicitly grant or withdraw their consent for this specific purpose
+
+2. Processing is **necessary for the performance of a contract** to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract.
+
+   e.g. An e-commerce website collects personal data, such as name, address, and payment information, from customers to process and fulfill their orders. The processing of this data is necessary to perform the contract between the customer and the online retailer.
+
+3. Processing is **necessary for compliance with a legal obligation** to which the controller is subject.
+   
+   e.g. A bank is required by law to verify the identity of its customers before opening an account. The bank collects personal data, such as identification documents, to comply with its legal obligation to prevent fraud and money laundering.
+
+4. Processing is **necessary in order to protect the vital interests** of the data subject or of another natural person.
+   
+   e.g. In a medical emergency, a hospital accesses a patient's medical history and personal data without their explicit consent to provide immediate life-saving treatment. The processing is necessary to protect the vital interests of the patient.
+
+5. Processing is **necessary for the performance of a task carried out in the public interest or in the exercise of official authority** vested in the controller.
+   
+   e.g. In a medical emergency, a hospital accesses a patient's medical history and personal data without their explicit consent to provide immediate life-saving treatment. The processing is necessary to protect the vital interests of the patient.
+
+6. Processing is **necessary for the purposes of the legitimate interests pursued by the controller or by a third party**, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.
+   
+   e.g. A marketing company processes customer data, such as purchase history and browsing behavior, to send personalized product recommendations and promotional offers. The company's legitimate interest is to provide relevant marketing content, but they ensure that it does not override the privacy rights of the individuals, especially if the data subjects are children.
+
+&nbsp;
+
+## Article 7 - Condition for Consent
+1. Where processing is based on consent, the **controller shall be able to demonstrate that the data subject has consented** to processing of his or her personal data.
+   
+2. If the data subject’s consent is given in the context of a written declaration which also concerns other matters, **the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language**. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.
+   
+3. **The data subject shall have the right to withdraw his or her consent at any time**. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.
+   
+4. When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, **the performance of a contract**, including the provision of a service, **is conditional on consent to the processing of personal data that is not necessary for the performance of that contract**.
+
+&nbsp;
+
+## Article 9 - Processing of special categories of personal data
+
+Article 9 of the GDPR addresses the processing of special categories of personal data. It **prohibits the processing of data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for identification, data concerning health, or data concerning a person's sex life or sexual orientation**.
+
+However, there are exceptions to this prohibition. Processing of such data is allowed if the **data subject has given explicit consent, it is necessary for employment and social security purposes, it is necessary to protect vital interests, it is carried out by non-profit organizations related to specific aims, the data is already made public by the individual, it is necessary for legal claims or court proceedings, it serves substantial public interest, it is for preventive or occupational medicine, it is for public health purposes, or it is for archival, scientific, historical, or statistical purposes in the public interest**.
+
+&nbsp;
+
+## Article 13-14 - Information to be provided to the data subject
 
 In addition to these conditions, the GDPR also specifies the information that should be provided to the data subject regarding the processing of their personal data. This information is outlined in Article 13-14, the relevant recitals, and the Article 29 Working Party (now European Data Protection Board) Guidelines on consent. Here's a summary of the information that should be provided:
 
@@ -866,7 +903,7 @@ In addition to these conditions, the GDPR also specifies the information that sh
 
 &nbsp;
 
-## Right to Erasure (Article 17)
+## Article 17 - Right to Erasure
 
 Article 17 of the General Data Protection Regulation (GDPR) outlines the right to erasure, also known as the "right to be forgotten." This right grants individuals the ability to request the deletion of their personal data from a data controller without undue delay, under certain circumstances. Here is a breakdown of the article:
 
@@ -895,15 +932,11 @@ These provisions aim to provide individuals with control over their personal dat
 
 &nbsp;
 
-## Processing of special categories of personal data (Article 9)
-
-Article 9 of the GDPR addresses the processing of special categories of personal data. It prohibits the processing of data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for identification, data concerning health, or data concerning a person's sex life or sexual orientation. However, there are exceptions to this prohibition. Processing of such data is allowed if the data subject has given explicit consent, it is necessary for employment and social security purposes, it is necessary to protect vital interests, it is carried out by non-profit organizations related to specific aims, the data is already made public by the individual, it is necessary for legal claims or court proceedings, it serves substantial public interest, it is for preventive or occupational medicine, it is for public health purposes, or it is for archival, scientific, historical, or statistical purposes in the public interest.
-
-&nbsp;
-
-## Automated individual decision-making, including profiling (Article 22)
+## Article 22 - Automated individual decision-making, including profiling
 
 Article 22 of the GDPR addresses automated individual decision-making, including profiling. It grants individuals the right not to be subject to decisions based solely on automated processing that significantly affects them. However, there are exceptions to this right. Automated decisions are allowed if they are necessary for entering into or performing a contract, authorized by applicable laws with suitable safeguards, or based on the explicit consent of the individual. The article also discusses conditions for the prohibition of automated decisions, such as the requirement that the decision is solely based on automated processing and includes profiling. Additionally, Article 21 addresses the right to object to profiling and direct marketing, providing individuals with the right to object to processing based on specific grounds. The article highlights the importance of providing information about automated decision-making to individuals, including meaningful information about the logic involved and the consequences of such processing. Different approaches to explaining automated decisions are discussed, including model explanation, model inspection, and outcome explanation. There is a need for accessible explanations for laypeople and consideration of factors like contrastive explanation, selective explanation, causal explanation, and social explanation. Providing information to users about input data, target values, and the consequences of automated assessments is also suggested.
+
+[DA FINIRE]
 
 &nbsp;
 
