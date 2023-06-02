@@ -47,11 +47,15 @@ Last Update: 02-06-2023
   - [Individual and Social Cost](#individual-and-social-cost)
   - [Conclusions](#conclusions)
   - [Questions](#questions-5)
-- [🟨 AI in the GDPR](#-ai-in-the-gdpr)
+- [🟩 AI in the GDPR](#-ai-in-the-gdpr)
   - [Article 3 - Territorial Scope](#article-3---territorial-scope)
   - [Article 4 - Definitions](#article-4---definitions)
-    - [Article 4.1 - Personal Data](#article-41---personal-data)
+    - [Article 4.1 - Personal data](#article-41---personal-data)
+    - [Article 4.2 - Processing](#article-42---processing)
     - [Article 4.4 - Profiling](#article-44---profiling)
+    - [Article 4.7 - Controller](#article-47---controller)
+    - [Article 4.8 - Processor](#article-48---processor)
+    - [Article 4, Recital 26 - Not Applicable to Anonymous Data](#article-4-recital-26---not-applicable-to-anonymous-data)
     - [Article 4.11 - Consent](#article-411---consent)
   - [Article 5 - Data Protection Principle](#article-5---data-protection-principle)
   - [Article 6 - Lawfulness of Processing](#article-6---lawfulness-of-processing)
@@ -60,8 +64,13 @@ Last Update: 02-06-2023
   - [Article 13-14 - Information to be provided to the data subject](#article-13-14---information-to-be-provided-to-the-data-subject)
   - [Article 17 - Right to Erasure](#article-17---right-to-erasure)
   - [Article 22 - Automated individual decision-making, including profiling](#article-22---automated-individual-decision-making-including-profiling)
-- [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
+    - [Article 22, Recital (71) - A right to explanation](#article-22-recital-71---a-right-to-explanation)
+  - [Main issues related to AI](#main-issues-related-to-ai)
+    - [Reidentification](#reidentification)
+    - [Inference](#inference)
+    - [Profiling](#profiling)
 - [🟥 Text analytics in the legal domain (Claudette)](#-text-analytics-in-the-legal-domain-claudette)
+- [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
 - [Seminars](#seminars)
   - [🟥 Responsibility and Automation in Socio-Technical Systems (Seminar)](#-responsibility-and-automation-in-socio-technical-systems-seminar)
   - [🟥 Fairness in algorithmic decision making](#-fairness-in-algorithmic-decision-making)
@@ -739,7 +748,7 @@ To safeguard these interests, it is crucial to have robust mechanisms in place t
 
 &nbsp;
 
-# 🟨 AI in the GDPR
+# 🟩 AI in the GDPR
 
 AI, or Artificial Intelligence, plays a significant role within the framework of the General Data Protection Regulation (GDPR). **While the GDPR does not explicitly mention AI or related concepts, many of its provisions are applicable to AI systems**. The GDPR, unlike the previous Data Protection Directive of 1995, incorporates terms related to the internet, such as "Internet," "social networks," "website," and "links." **The focus of the GDPR is primarily on addressing challenges emerging from the internet, which were not considered in the earlier directive**. Nonetheless, numerous provisions within the GDPR are relevant to AI. In this explanation, we will delve into various aspects of AI in relation to the GDPR, covering the conceptual framework, data protection principles, legal bases, transparency, data subjects' rights, automated decision making, and privacy by design.
 
@@ -753,61 +762,55 @@ AI, or Artificial Intelligence, plays a significant role within the framework of
 &nbsp;
 
 ## Article 4 - Definitions
-The GDPR provides several definitions that are essential to understanding its provisions. For instance:
-- **Personal data** refers to any information relating to an identified or identifiable natural person (data subject). Identifiable information can include names, identification numbers, location data, online identifiers, or factors specific to the person's identity.
-- **Processing** encompasses any operation performed on personal data, whether automated or not.
-- **Controller** refers to the entity determining the purposes and means of personal data processing.
-- **Processor** refers to the entity processing personal data on behalf of the controller.
-
-Here are some examples:
-- **Personal data**: Let's say an online store collects customer information for the purpose of processing orders. Personal data in this context could include the customer's name, address, email address, phone number, and payment information.
-- **Processing**: Suppose a company analyzes customer purchase history to generate personalized product recommendations. This process of analyzing and utilizing customer data to provide tailored recommendations is an example of processing personal data.
-- **Controller**: Consider a social media platform that determines the purposes and means of processing user data. The platform sets the rules and decides how user data is collected, stored, and used, making it the controller of that personal data.
-- **Processor**: Continuing with the previous example, the social media platform might engage a third-party analytics company to analyze user data and provide insights. In this case, the analytics company acts as a processor, as it handles personal data on behalf of the social media platform.
+The GDPR provides several definitions that are essential to understanding its provisions.
 
 &nbsp;
 
-### Article 4.1 - Personal Data
-The GDPR defines personal data as any information relating to an identified or identifiable natural person: **Identifiability** depends on the existence of means reasonably likely to be used for reidentification, considering factors such as costs, time required, available technology, and technological developments.
+### Article 4.1 - Personal data
+**Personal Data** refers to any information relating to an identified or identifiable natural person (data subject). Identifiable information can include names, identification numbers, location data, online identifiers, or factors specific to the person's identity.
 
-**Pseudonymisation** involves substituting identifiers in personal data with pseudonyms. However, if the link between the pseudonym and the identifying data can be reconstructed using additional information, the pseudonymised data is still considered personal data.
+Let's say an online store collects customer information for the purpose of processing orders. Personal data in this context could include the customer's name, address, email address, phone number, and payment information.
 
-When it comes to AI and the GDPR definition of personal data, two key issues are raised:
+&nbsp;
 
-- First, there is the "re-personalization" of anonymous data, which refers to the **reidentification** of individuals associated with such data. **AI and computational statistics methods can increase the identifiability of apparently anonymous data, allowing connections to be made with the individuals involved**. Numerous cases have demonstrated the reidentification of supposedly anonymous datasets, revealing sensitive information about individuals, such as medical records, browsing history, or preferences.
+### Article 4.2 - Processing
+**Processing** encompasses any operation performed on personal data, whether automated or not.
 
-   The reidentification of data subjects is often based on statistical correlations between nonidentified data and personal data related to the same individuals. For example, matching deidentified hospital admission information with the governor's date of birth, ZIP code, and gender enabled the reidentification of the governor's health records. Similarly, anonymized movie ratings in a Netflix price database could be reidentified by linking them to non-anonymous ratings in IMDb.
+Suppose a company analyzes customer purchase history to generate personalized product recommendations. This process of analyzing and utilizing customer data to provide tailored recommendations is an example of processing personal data.
 
-   To address reidentification, there are two approaches. The first involves ensuring that data is deidentified in ways that make it more challenging to reidentify the data subject. The second approach focuses on implementing security processes and measures for the release of data to prevent reidentification.
-
-- Another issue is the **inference** of further personal information from existing personal data. **AI systems can infer new information about data subjects by applying algorithmic models to their personal data**. The question arises as to whether the inferred information should be considered as new personal data, distinct from the original data. For example, inferring an individual's sexual orientation from facial features or personality type from online activity. If the inferred information is deemed new personal data, automated inferences would trigger the same consequences as processing personal data under the GDPR.
-
-Here are some examples:
-- **Re-personalisation of anonymous data (reidentification)**: Imagine a healthcare research institution that collects anonymized medical records from a large group of individuals for analysis. Through AI and advanced data linkage techniques, it becomes possible to reidentify specific individuals by linking the anonymized data with other available information such as publicly available datasets or social media profiles. This reidentification process can potentially breach the anonymity of the data and reintroduce personal identifiers, making it a concern under the GDPR.
-  
-- **Inference of further personal information**: Suppose an e-commerce platform collects personal data such as customers' purchase history, browsing patterns, and demographic information. By applying AI algorithms and data analytics, the platform can infer additional personal information about its customers. For example, based on a customer's purchase preferences, browsing behavior, and location data, the platform may infer their interests, hobbies, or lifestyle choices. These inferences create new personal information that goes beyond the explicitly provided data, and they may have implications under the GDPR, as individuals have the right to be aware of and have control over such inferences. 
 
 &nbsp;
 
 ### Article 4.4 - Profiling
-
 Article 4(4) of the General Data Protection Regulation (GDPR) defines **profiling as any form of automated processing of personal data that involves using the data to evaluate certain personal aspects of a natural person**. This includes analyzing or predicting aspects related to the person's work performance, economic situation, health, personal preferences, interests, reliability, behavior, location, or movements.
 
-**Profiling, although not explicitly mentioning AI, typically involves the use of AI technologies for processing**. It aims to classify individuals into categories or groups based on inferred features. It involves gathering information about individuals and evaluating their characteristics or behavior patterns to categorize them and make predictions about their abilities, interests, or likely behavior.
+&nbsp;
 
-**The advancement of AI and Big Data has significantly increased the opportunities for profiling**. Profiling often relies on machine learning algorithms trained on large datasets that link certain features of individuals to specific outcomes. Once trained, these algorithms can be used to make predictions for new individuals based on their input data.
+### Article 4.7 - Controller
+**Controller** refers to the entity determining the purposes and means of personal data processing.
 
-For example, AI-based profiling can be used to determine the likelihood of heart disease for insurance applicants based on their health records, habits, or social conditions. It can also assess the creditworthiness of loan applicants by considering their financial history, online activity, and social standing. Furthermore, it can predict the likelihood of reoffending for convicted individuals based on their criminal history, personality traits (identified through personality tests), and personal background. These predictions may trigger automated determinations related to insurance pricing, loan approvals, or parole decisions.
+Consider a social media platform that determines the purposes and means of processing user data. The platform sets the rules and decides how user data is collected, stored, and used, making it the controller of that personal data.
 
-**AI-based profiling can go beyond predictions and also influence a person's behavior**. For instance, it can be used to trigger desired purchasing behavior or voting behavior by understanding a person's propensity to respond in certain ways to specific stimuli.
+&nbsp;
 
-**When it comes to personal data, it's essential to differentiate between the general correlations captured by the algorithmic model and the results obtained by applying the model to a specific individual**:
-- The algorithmic model itself doesn't contain personal data as it links input values (predictors) to outcomes (targets) for individuals with similar characteristics. 
-- However, when the model is applied to a new individual, the description of the individual and the inferred outcome become personal data, collected and inferred from that individual.
+### Article 4.8 - Processor
+**Processor** refers to the entity processing personal data on behalf of the controller.
 
-Under the GDPR, data protection rights also apply to inferred data concerning individuals when they are used to derive conclusions that are or may be acted upon. Data subjects have the right to access both the personal data used as input for the inference and the personal data obtained as the inferred output. They also have the right to rectify inferred information, even if it is based on unverifiable or probabilistic inferences.
+Continuing with the previous example, the social media platform might engage a third-party analytics company to analyze user data and provide insights. In this case, the analytics company acts as a processor, as it handles personal data on behalf of the social media platform.
 
-There has been a discussion about granting data subjects a general right to "**reasonable inference**." This means that individuals would have the right to challenge the inferences made by AI systems, not just the decisions based on those inferences. For an inference to be considered reasonable, it should meet criteria such as acceptability, relevance, and reliability. Controllers should be prohibited from basing their assessments or decisions on unreasonable inferences and should be able to demonstrate the reasonableness of their inferences.
+&nbsp;
+
+### Article 4, Recital 26 - Not Applicable to Anonymous Data
+Recital (26) addresses identifiability and Pseudonymisation:
+
+- **Identifiability** is the conditions under which a piece of data which is not explicitly linked to a person, **still counts as personal data**, since the possibility exists to identify the person concerned.
+
+   Let's say there is a dataset containing medical records of patients. The dataset includes information such as age, gender, and medical conditions, but does not include any names or direct identifiers. However, if there is another dataset available that links the patient's unique identification number with their names, and someone can use this additional information to identify specific individuals in the medical records dataset, then the information in the dataset is still considered personal data. This is because the possibility exists to identify the individuals even without explicit linkage to their names.
+
+- **Pseudonymisation** involves substituting identifiers in personal data with pseudonyms. However, if the link between the pseudonym and the identifying data can be reconstructed using additional information, the **pseudonymised data is still considered personal data**.
+  
+  In a marketing company, customer data is pseudonymized by replacing actual names with randomly generated unique identifiers. The company uses these pseudonyms for internal data analysis and targeting advertisements. However, if the pseudonymized data can be reconstructed or linked back to the original customer profiles using additional information, such as a separate database that contains the mapping between pseudonyms and actual names, then the pseudonymized data is still considered personal data. The fact that the link between the pseudonyms and the identifying information can be reconstructed means that the data is not truly anonymized and the principles of data protection still apply.
+ 
 
 &nbsp;
 
@@ -887,25 +890,27 @@ However, there are exceptions to this prohibition. Processing of such data is al
 
 ## Article 13-14 - Information to be provided to the data subject
 
-In addition to these conditions, the GDPR also specifies the information that should be provided to the data subject regarding the processing of their personal data. This information is outlined in Article 13-14, the relevant recitals, and the Article 29 Working Party (now European Data Protection Board) Guidelines on consent. Here's a summary of the information that should be provided:
+In addition to these conditions, the **GDPR also specifies the information that should be provided to the data subject regarding the processing of their personal data.** This information is outlined in Article 13-14, the relevant recitals, and the Article 29 Working Party (now European Data Protection Board) Guidelines on consent. Here's a summary of the information that should be provided:
 
-- Identity of the controller and, if applicable, the controller's representative, along with their contact details.
-- Contact details of the data protection officer.
-- Purposes of the processing for which the personal data are intended.
-- Legal basis for the processing.
-- Categories of personal data involved.
-- Recipients or categories of recipients who will receive the personal data.
-- Period for which the personal data will be stored, or the criteria used to determine that period if it's not possible to provide an exact duration.
-- Existence of the data subject's rights, including the right to access, rectify, erase, restrict processing, object to processing, and data portability.
-- Right to lodge a complaint with a supervisory authority.
-- Source of the personal data if they were not directly obtained from the data subject.
-- Existence of automated decision-making, including profiling, and meaningful information about the logic involved, as well as the significance and envisaged consequences of such processing for the data subject.
+- **Identity of the controller** and (where applicable) controller’s representative and their contact details
+- **Contact details** of the data protection officer
+- **Purposes of the processing** for which the personal data are intended
+- **Legal basis** for the processing
+- **Categories of personal data concerned**
+- **Recipients or categories of recipients** of the personal data
+- **Period** for which the personal data will be stored, or if that is not possible, the 
+criteria used to determine that period
+- Existence of the **right to request from the controller access to and rectification or erasure of personal data** or restriction of processing concerning the data subject and to object to processing as well as the right to data portability
+- **Right to lodge a complaint with a supervisory authority**
+- **Source** from which personal data originate
+- **Existence of automated decision-making**, including profiling
+
 
 &nbsp;
 
 ## Article 17 - Right to Erasure
 
-Article 17 of the General Data Protection Regulation (GDPR) outlines the right to erasure, also known as the "right to be forgotten." This right grants individuals the ability to request the deletion of their personal data from a data controller without undue delay, under certain circumstances. Here is a breakdown of the article:
+Article 17 of the General Data Protection Regulation (GDPR) outlines the right to erasure, also known as the "right to be forgotten". **This right grants individuals the ability to request the deletion of their personal data from a data controller without undue delay, under certain circumstances**. Here is a breakdown of the article:
 
 1. The data subject's right to erasure:
    - Individuals have the right to obtain the erasure of their personal data without undue delay.
@@ -934,9 +939,92 @@ These provisions aim to provide individuals with control over their personal dat
 
 ## Article 22 - Automated individual decision-making, including profiling
 
-Article 22 of the GDPR addresses automated individual decision-making, including profiling. It grants individuals the right not to be subject to decisions based solely on automated processing that significantly affects them. However, there are exceptions to this right. Automated decisions are allowed if they are necessary for entering into or performing a contract, authorized by applicable laws with suitable safeguards, or based on the explicit consent of the individual. The article also discusses conditions for the prohibition of automated decisions, such as the requirement that the decision is solely based on automated processing and includes profiling. Additionally, Article 21 addresses the right to object to profiling and direct marketing, providing individuals with the right to object to processing based on specific grounds. The article highlights the importance of providing information about automated decision-making to individuals, including meaningful information about the logic involved and the consequences of such processing. Different approaches to explaining automated decisions are discussed, including model explanation, model inspection, and outcome explanation. There is a need for accessible explanations for laypeople and consideration of factors like contrastive explanation, selective explanation, causal explanation, and social explanation. Providing information to users about input data, target values, and the consequences of automated assessments is also suggested.
+Article 22 of the GDPR addresses automated individual decision-making, including profiling. **The first paragraph establishes a general right for data subjects not to be subject to decisions based solely on automated processing that significantly affect them**. However, there are exceptions to this prohibition. The decision may be allowed if it's necessary for a contract, authorized by applicable law with suitable safeguards, or based on explicit consent from the data subject.
 
-[DA FINIRE]
+**Four conditions must be met for the prohibition to apply**: 
+- A decision must be made
+- It must be solely based on automated processing
+- It must involve profiling
+- It must have a legal or significant effect
+The decision should have a tangible impact on the data subject, such as automatic credit application refusal or e-recruiting practices. Emotional effects or targeted advertising without economic consequences typically do not fall under this provision.
+
+**Article 21 addresses the right to object to profiling and direct marketing**. Data subjects have the right to object to processing of personal data, including profiling, based on specific grounds related to their situation. This right extends to direct marketing, and no compelling legitimate grounds can override the data subject's interests, rights, and freedoms. Controllers should facilitate the exercise of this right, particularly in the context of profiling for marketing purposes.
+
+Regarding automated decision-making, controllers have obligations under Article 13(2)(f) and 14(2)(g) to provide information to data subjects. They must inform individuals about the existence of automated decision-making, including profiling, and provide meaningful information about the logic, significance, and envisaged consequences of such processing.
+
+There are ongoing discussions on how to make explanations of automated decisions accessible to both technological experts and laypeople. Explanatory techniques and models in computer science aim to provide transparent insights into opaque AI systems, while social scientists focus on contrastive, selective, causal, and social explanations. Ideally, data subjects should be provided with information about the input data, target values, and envisaged consequences of automated assessments or decisions. This information should be provided ex-ante, at the time of data collection or repurposing.
+
+&nbsp;
+
+### Article 22, Recital (71) - A right to explanation
+
+According to Recital (71) of the GDPR, the safeguards for data subjects in cases of automated decisions should include specific information, the right to human intervention, the right to express their point of view, the right to an explanation of the decision, and the right to challenge the decision. However, Article 22 of the GDPR, which addresses automated decisions, only includes the right to human intervention, the right to express their point of view, and the right to challenge the decision. It does not explicitly mention the provision of specific information or the right to an explanation of the decision.
+
+There are two possible interpretations of this omission. The first interpretation suggests that providing individual explanations is not a legally enforceable requirement but rather a recommended good practice at the discretion of the data controllers. In this view, controllers may choose to provide explanations but are not obligated to do so.
+
+The second interpretation suggests that there is an enforceable legal obligation to provide individual explanations, although without imposing an undue burden on controllers. This interpretation is supported by the qualifier "at least" in Article 22, which implies that additional safeguards, potentially including individual explanations, may be required as indicated in Recital 71. Under this interpretation, an explanation would be legally required whenever feasible and compatible with technology, costs, and business practices.
+
+However, it is important to note that relying solely on the right to individualized explanations may not be a comprehensive remedy for biases, malfunctions, and inappropriate applications of AI and Big Data technologies. Data subjects may lack sufficient understanding of technology and normative standards, leading to underutilization of the right to explanation. Additionally, even if an explanation reveals flaws, data subjects may not be able to obtain a more satisfactory decision based on that information.
+
+&nbsp;
+
+## Main issues related to AI
+
+&nbsp;
+
+### Reidentification
+
+The "re-personalization" of anonymous data refers to the reidentification of individuals associated with such data. **AI and computational statistics methods can increase the identifiability of apparently anonymous data, allowing connections to be made with the individuals involved**. Numerous cases have demonstrated the reidentification of supposedly anonymous datasets, revealing sensitive information about individuals, such as medical records, browsing history, or preferences.
+
+For example, matching deidentified hospital admission information with the governor's date of birth, ZIP code, and gender enabled the reidentification of the governor's health records. Similarly, anonymized movie ratings in a Netflix price database could be reidentified by linking them to non-anonymous ratings in IMDb.
+
+To address reidentification, there are two approaches:
+- The first involves ensuring that **data is deidentified in ways that make it more challenging** to reidentify the data subject. 
+- The second approach focuses on **implementing security processes** and measures for the release of data to prevent reidentification.
+
+&nbsp;
+
+### Inference
+
+Another issue is the inference of further personal information from existing personal data. **AI systems can infer new information about data subjects by applying algorithmic models to their personal data. The question arises as to whether the inferred information should be considered as new personal data, distinct from the original data**.
+
+For example, inferring an individual's sexual orientation from facial features or personality type from online activity. If the inferred information is deemed new personal data, automated inferences would trigger the same consequences as processing personal data under the GDPR.
+
+&nbsp;
+
+### Profiling
+
+**Profiling, although not explicitly mentioning AI, typically involves the use of AI technologies for processing**. It aims to classify individuals into categories or groups based on inferred features. It involves gathering information about individuals and evaluating their characteristics or behavior patterns to categorize them and make predictions about their abilities, interests, or likely behavior.
+
+For example, AI-based profiling can be used to determine the likelihood of heart disease for insurance applicants based on their health records, habits, or social conditions. It can also assess the creditworthiness of loan applicants by considering their financial history, online activity, and social standing. Furthermore, it can predict the likelihood of reoffending for convicted individuals based on their criminal history, personality traits (identified through personality tests), and personal background. These predictions may trigger automated determinations related to insurance pricing, loan approvals, or parole decisions.
+
+**AI-based profiling can go beyond predictions and also influence a person's behavior**. For instance, it can be used to trigger desired purchasing behavior or voting behavior by understanding a person's propensity to respond in certain ways to specific stimuli.
+
+When it comes to inferences drawn from AI systems, it is important to **differentiate between the general correlations captured by the algorithmic model and the results obtained by applying that model to specific individuals**. 
+- The algorithmic model, once trained on personal data, no longer contains personal data itself as it links input values to outcomes. These correlations can be seen as group data applicable to individuals sharing similar characteristics. 
+- However, when the model is applied to a new individual, both the individual's description and the inferred output represent personal data.
+
+Under the GDPR, data protection rights should apply to inferred data concerning individuals, especially when those inferences lead to actionable conclusions. According to the Article 29 Working Party, **data subjects have the right to access both the personal data used as input for the inference and the personal data obtained as the inferred output**. However, the right to rectification has limitations. For processing by public authorities, existing review procedures should be considered, while the respect for private assessments and decisions should be balanced with the right to rectify inferred data processed by private controllers.
+
+Some legal scholars propose a general right to "**reasonable inference**" for data subjects, which means that any assessment or decision affecting individuals should be obtained through automated inferences that meet ethical and epistemic standards. Inferences should be based on normatively acceptable input data, be relevant to the purpose of the decision, and demonstrate reliability in terms of accuracy and statistical validity. Controllers should be prohibited from relying on unreasonable inferences and should have the obligation to demonstrate the reasonableness of their inferences. However, these requirements should apply specifically to inferences leading to assessments and decisions affecting the data subject, not to inquiries for cognitive purposes such as scientific research.
+
+&nbsp;
+
+&nbsp;
+
+# 🟥 Text analytics in the legal domain (Claudette)
+
+The provided text describes a **master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette**. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
+
+The main goal of the project is to **explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion**. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
+
+The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. **The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13**. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
+
+The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
+
+The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
+
+The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
 
 &nbsp;
 
@@ -967,24 +1055,6 @@ The DMA identifies gatekeeper platforms, including advertising services, and imp
 The Digital Services Act (DSA) addresses online platforms and their obligations regarding online advertising. It requires online platforms to ensure that recipients can clearly and unambiguously identify advertisements and the parties involved in presenting and paying for them.
 
 These legislative proposals focus on promoting transparency, consumer choice, and fair practices in the digital advertising ecosystem. By emphasizing the need for clear consent, identification of advertisements, and limitations on data processing, the DSA and DMA aim to address the shortcomings of current consent practices and protect consumers from potential harms associated with targeted advertising.
-
-&nbsp;
-
-&nbsp;
-
-# 🟥 Text analytics in the legal domain (Claudette)
-
-The provided text describes a master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
-
-The main goal of the project is to explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
-
-The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
-
-The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
-
-The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
-
-The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
 
 &nbsp;
 
