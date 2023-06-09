@@ -1,5 +1,5 @@
 ﻿
-Last Update: 02-06-2023
+Last Update: 09-06-2023
 
 &nbsp;
 
@@ -71,10 +71,15 @@ Last Update: 02-06-2023
     - [Profiling](#profiling)
 - [🟥 Text analytics in the legal domain (Claudette)](#-text-analytics-in-the-legal-domain-claudette)
 - [🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?](#-the-regulation-of-online-targeted-advertising-is-consent-enough)
+- [🟥 The Ethical Knob: Ethically-Customisable Automated Vehicles and the Law](#-the-ethical-knob-ethically-customisable-automated-vehicles-and-the-law)
+  - [Analysis](#analysis)
+  - [Conclusions](#conclusions-1)
 - [Seminars](#seminars)
-  - [🟥 Responsibility and Automation in Socio-Technical Systems (Seminar)](#-responsibility-and-automation-in-socio-technical-systems-seminar)
+  - [🟥 Responsibility and Automation in Socio-Technical Systems](#-responsibility-and-automation-in-socio-technical-systems)
   - [🟥 Fairness in algorithmic decision making](#-fairness-in-algorithmic-decision-making)
   - [🟥 Do Artifacts Have Politics?](#-do-artifacts-have-politics)
+  - [🟥 Algorithmic fairness through group parities The case of COMPAS-SAPMOC — A Lesson to Use of Al in Tax Domain](#-algorithmic-fairness-through-group-parities-the-case-of-compas-sapmoc--a-lesson-to-use-of-al-in-tax-domain)
+  - [🟥 AI Ethics at IBM](#-ai-ethics-at-ibm)
 
 
 &nbsp;
@@ -1016,15 +1021,23 @@ Some legal scholars propose a general right to "**reasonable inference**" for da
 
 The provided text describes a **master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette**. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.
 
-The main goal of the project is to **explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion**. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are often overlooked by consumers. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
+The main goal of the project is to **explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion**. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are **often overlooked by consumers**. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.
 
 The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. **The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13**. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.
 
 The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.
 
-The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category.
+For example, if a clause states that the consumer is bound by the terms of service simply by visiting the website or by downloading the app, or by using the service: **potentially unfair**. If giving consumers a right to bring disputes in their place of residence: **clearly fair**. If stating that any judicial proceeding takes a residence away (i.e. in a different city, different country): **clearly unfair**.
 
-The text concludes by mentioning the development of an online server for Claudette, and suggests the potential for integrating memory-augmented neural networks and expert legal knowledge to enhance unfairness identification. Legal experts are able to recognize potentially unfair clauses based on their background knowledge and intuition, and leveraging this knowledge in AI systems could lead to improved fairness analysis.
+**The project employs various machine learning methodologies**, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category. The text also introduces **Memory-Augmented Neural Networks**, which process and store information in memory. These networks can understand relevant knowledge for a given query, retrieve concepts from memory, and combine memory and query to make predictions.
+
+The focus then shifts to exploiting knowledge for identifying unfairness in the context of GDPR compliance. **The tool ensures compliance with GDPR articles 13-14, detects vague language, and identifies clauses that are insufficiently informative**.
+
+The text further explains the criteria for assessing privacy policies in terms of lawfulness, fairness, transparency, clarity of expression, and substantive compliance. Different levels of achievement are discussed, including optimal and suboptimal (questionable or insufficient) compliance.
+
+Several examples are provided to illustrate different aspects, such as the comprehensiveness of information, categories of personal data concerned, consent clauses, policy change notifications, and clarity of expression. Vagueness indicators are discussed, including conditional terms, generalizations, modality, and non-specific numeric quantifiers. The **multilingual capabilities** of Claudette in German, Italian, and Polish are highlighted, along with different approaches for creating target-language datasets.
+
+Finally, the **text briefly mentions a web-crawler tool developed for automatic privacy policy monitoring, which involves checking document dates and comparing content with previously saved versions**.
 
 &nbsp;
 
@@ -1060,37 +1073,89 @@ These legislative proposals focus on promoting transparency, consumer choice, an
 
 &nbsp;
 
+# 🟥 The Ethical Knob: Ethically-Customisable Automated Vehicles and the Law
+
+The passage discusses the ethical dilemmas presented by **autonomous vehicles (AVs) when making decisions that involve potential harm to passengers, pedestrians, or others in the event of an unavoidable collision**. It references the "trolley problem," a classic ethical thought experiment, to illustrate the decision-making scenarios. The passage raises the question of whether a mandatory ethics setting (MES) should be implemented in all AVs or if drivers should have the option to set their own personal ethics setting (PES).
+
+Gogoll and Müller argue in favor of a mandatory MES, stating that it would lead to socially desirable outcomes and prioritize minimizing harm to people in traffic. They suggest that AVs should sacrifice their drivers to save a greater number of lives under certain circumstances. On the other hand, Millar suggests that users/owners should maintain responsibility for ethical choices in AVs rather than designers.
+
+A study by Bonnefon et al indicates that **people are comfortable with AVs adopting a utilitarian approach to minimize the death toll. However, participants showed a preference for riding in cars that prioritize the safety of their own passengers**. This preference for self-interest raises challenges in implementing regulations that would enforce utilitarian AVs.
+
+The passage also explores the **implications of preprogramming AVs with fixed ethical settings. If a utilitarian setting is compulsory, many people may refuse to use AVs, while preprogramming AVs to prioritize passenger safety would endanger pedestrians**. The passage proposes the idea of allowing passengers to customize the ethical settings of AVs, with the responsibility of making ethical decisions falling on the passengers. It suggests that exploring the legal implications of ethically customizable AVs compared to human-driven cars and preprogrammed AVs is necessary.
+
+The passage concludes by mentioning the legal and ethical challenges of ethically customizable AVs, particularly in probabilistic settings where alternative choices result in probabilities of life losses. It raises the question of how much priority passengers should be given over the safety of others under civil and criminal law.
+
+&nbsp;
+
+## Analysis
+
+This section discusses **liability analysis in the context of different types of vehicles involved in unavoidable accidents: a human-driven car, an ethically preprogrammed autonomous vehicle (AV), and an ethically customizable AV with an "Ethical Knob"**:
+- For a **human-driven car**, if the driver did not contribute to creating the danger, they may avoid punishment in all scenarios described. 
+   - In scenario (a), where staying on course leads to pedestrian deaths, the driver's choice can be justified based on the moral-legal stance condemning wilful causation of death. 
+   - In scenario (b), if staying on course is necessary to save the driver's life, it can be justified under the state of necessity. 
+   - The same justification applies to scenario (c) where the driver's choice to save their own life leads to the death of others.
+
+- In the case of a **preprogrammed AV**, the programmer's choices differ from those of a human driver. 
+   - In scenario (a), where the AV stays on course, it is doubtful whether the programmer would be justified in sacrificing several pedestrians to save one passerby. The distinction between omission and deliberate action does not apply to the programmer's choice. 
+   - In scenario (b), both staying on course and swerving can be justified under the state of necessity, depending on the legal jurisdiction. However, the applicability of the defense is controversial when the perpetrator is not directly in danger. 
+   - In scenario (c), preprogramming the AV to continue on its trajectory and cause more deaths cannot be morally or legally justified.
+
+- The introduction of the "**Ethical Knob**" in ethically **customizable AVs allows the passenger to select different settings: altruistic mode, impartial mode, or egoistic mode**:
+   - In **altruistic mode**, the AV prioritizes saving others over the passengers. In impartial mode, the AV takes a utilitarian approach, minimizing the number of deaths. 
+   - In **egoistic mode**, the AV prioritizes saving the passengers. The knob can also incorporate kin altruism, where the AV saves the passenger's family or significant others. The allocation of liability for ethically customizable AVs would be similar to manned cars, but the behavior choice should not differentiate between omission and action.
+      - In scenario (a), the knob setting does not matter as the passenger's life is not at stake, and the AV should act based on utilitarian grounds to minimize deaths. 
+      - In scenarios (b) and (c), the behavior depends on the knob setting. In scenario (b), if set to egoistic mode, the AV prioritizes saving the passenger; 
+  - In **impartial mode**, it takes a utilitarian approach, and in altruistic mode, it sacrifices the passenger to save others. In scenario (c), regardless of the knob setting, the AV sacrifices the passenger to save multiple pedestrians.
+
+The state-of-necessity defense may apply in scenarios (b) and (c), excusing the passenger's choice to prioritize their life. However, the passenger could still be civilly liable for damages and required to pay compensation. The different knob settings may also affect third-party insurance, with higher premiums if the passenger chooses to sacrifice others to save themselves.
+
+&nbsp;
+
+## Conclusions
+
+The authors propose the use of an Ethical Knob in autonomous vehicles (AVs) to address moral dilemmas and allocate ethical choices to the users. The knob allows passengers to customize the AV's behavior by choosing between different moral settings, such as prioritizing the lives of pedestrians or passengers. This customization offers a wider range of choices compared to preprogrammed AVs. The legal analysis indicates that ethically customizable AVs would differ significantly from preprogrammed AVs and human-driven cars in terms of their legal implications. With the Ethical Knob, users would assume responsibility for ethical decisions, similar to drivers of traditional cars, and the state-of-necessity defense could apply in some cases. The knob's settings selected in advance could affect the distinction between action and omission, potentially treating ethically customizable AVs similarly to preprogrammed AVs. Manufacturers would not have additional obligations or liabilities unless they enable illegal behavior through the AV's settings. **The Ethical Knob could facilitate market placement and enhance user acceptance of AVs by aligning the moral algorithm with individual attitudes and convictions. However, insurance implications arise when users select settings that prioritize their lives over third parties, potentially increasing the risk for others and impacting coverage and premiums**. The extent to which the state-of-necessity defense would apply in such scenarios and the level of user-selected egoism that could lead to criminal or civil liability would require regulatory clarification.
+
+&nbsp;
+
+&nbsp;
+
 # Seminars
 
 &nbsp;
 
-## 🟥 Responsibility and Automation in Socio-Technical Systems (Seminar)
+## 🟥 Responsibility and Automation in Socio-Technical Systems
 
-In the field of complex socio-technical organizations, allocating responsibilities among participants is a challenging task. The role of humans interacting with highly automated systems is a crucial consideration. Determining who bears responsibility for accidents in highly automated systems is a complex ethical and legal issue. This text explores the concept of responsibility and automation within the context of air traffic management.
+In complex socio-technical organizations, the **allocation of responsibilities among participants becomes a critical issue**. This is particularly true when considering the role of humans interacting with highly automated systems, such as in air traffic management. Who should be held responsible for accidents in these highly automated systems?
 
-Understanding Responsibility
-To illustrate the concept of responsibility, let us consider the case of a ship captain, referred to as X. X was responsible for the safety of the passengers and crew. However, due to his irresponsible behavior, including getting drunk during the last voyage, the ship was lost with all aboard. Although rumors of his insanity circulated, the doctors held him responsible for his actions. X was found criminally responsible for his negligent conduct and legally responsible for the loss of life and property. Despite still being alive, he carries moral responsibility for the deaths of many women and children (Hart, 1970).
+The concept of responsibility is often intertwined with the notion of liability, both from a legal and moral perspective. An illustrative example is provided by H.L.A. Hart's book "Punishment and Responsibility: Essays in the Philosophy of Law." In this book, Hart presents a case of a ship captain, referred to as X, who was responsible for the safety of his passengers and crew. However, due to his irresponsible behavior, including getting drunk every night, the ship was lost, and all aboard perished. Despite X's claims that exceptional winter storms were responsible for the ship's loss, he was found criminally responsible for his negligent conduct.
 
-Liability in Socio-Technical Systems
-Liability in socio-technical systems can be categorized into various forms, including legal, civil, criminal, and administrative liability. Each form encompasses different aspects, such as fault liability (negligent or intentional actions) and special cases specific to certain contexts. It is essential to understand these liability frameworks when examining responsibility and automation in air traffic management.
+**Liability in highly automated systems can be categorized into various forms, including legal liability, civil liability, criminal liability, and administrative liability**. Each of these forms carries different consequences, such as detention, fines, compensatory damages, punitive damages, or civil penalties. The specific type of liability depends on the circumstances and nature of the incident, whether it resulted from negligence or intentional actions.
 
-The Future of Air Traffic Management
-Over the next 30 years, the development of new generation air traffic management systems is expected. These systems will be highly automated, aiming to enhance capacity, safety, efficiency, and sustainability. They will operate with varying degrees of human supervision or even without any direct human involvement. This increased automation poses important questions about the allocation of responsibilities and the role of humans in such systems.
+In the future of air traffic management, new generation systems are expected to be highly automated, aiming to increase capacity, safety, efficiency, and sustainability. These systems will involve higher levels of automation, with humans acting as controllers and supervisors. The concept of hybrid agency, where humans and machines collaborate as joint cognitive systems, will become increasingly relevant. The intelligence and autonomy of machines will play a significant role in decision-making processes.
 
-Implications of Automation
-Automation in air traffic management entails the delegation of tasks from operators to technology. Humans will assume the roles of controllers and supervisors, operating in a hybrid agency alongside machines. Machine intelligence and autonomy will play a significant role, challenging operators to cope with the complexity introduced by advanced technology. It is important to note that automation is not an all-or-nothing concept but rather a spectrum with different levels of automation.
+Automation in air traffic management is not a binary concept but exists along a spectrum. It involves the delegation of tasks from operators to technology, with varying degrees of cooperation required. Automation can support human capabilities and enhance task performance. Different levels of automation, as described by the SESAR taxonomy, provide varying degrees of support for information acquisition, analysis, decision-making, and action implementation.
 
-Level of Automation and Liability Risk
-The level of automation directly impacts liability risks. As the level of automation increases, the technology provider assumes more liability, while the human operator's liability decreases. However, the use of technologies with intermediate levels of automation can result in high liability risks for both the technology provider and the human operator. Striking a balance between automation and liability is crucial to ensure accountability and mitigate risks effectively.
+The increasing level of automation in air traffic management systems introduces new challenges regarding responsibility and liability. As automation takes on more decision-making authority, the liability risk for technology providers may increase, while the responsibility of human operators may decrease. However, employing technologies with intermediate levels of automation can create high liability risks for both technology providers and human operators.
 
-Fragmentation of Tasks and Liability
-In socio-technical systems, the fragmentation of tasks can lead to uncertainty and complexity in procedures. For human operators, it becomes challenging to determine how and by whom each task should be carried out, resulting in a high liability risk for negligence. Likewise, technology providers face difficulties in designing human-machine interfaces that adequately support decision-making and provide comprehensive information. They also bear a high product liability risk due to design and information defects.
+**Fragmentation of tasks within highly automated systems can lead to uncertainty and complexity in procedures**. The allocation of responsibility becomes challenging, as it is often difficult to determine who should carry out each task and who bears the liability for negligence. Technology providers face challenges in designing human-machine interfaces that adequately support decision-making and provide comprehensive information.
 
-Liability Shift in Highly Automated Systems
-In highly automated systems or AI systems, there is a gradual shift in liability from individual operators to the organizations developing, using, and maintaining the technology. This liability shift can be attributed to product liability, organizational or no-fault liability, and vicarious liability for faults of employees. As automation advances, it is crucial to assess liability as early as possible in the technology's life cycle, considering the role of technology in accidents.
+**The emergence of highly automated systems and AI systems also brings about a shift in liability**. The liability for injuries or harm caused by technological failures gradually transfers to the organizations developing, using, or maintaining the technology. This shift is based on product liability, organizational liability, and vicarious liability. Individual liability, based on fault liability, may persist only in cases of intentional harm or recklessness. The responsibility for decisions made by humans when interacting with automated systems remains a significant issue.
 
-Decision-Making Authority
-Effective decision-making authority is a crucial aspect of socio-technical systems. In joint cognitive systems involving humans and AI, questions arise regarding decision-making roles and responsibilities. Laws.
+The level of automation in a system directly influences the level of liability risk. Increasing automation increases the liability risk for technology providers while decreasing the liability risk for human operators. The complexity of highly automated systems raises questions about liability standards, certification, the right of recourse, and the role of insurance. The international context further complicates liability issues, as different jurisdictions may have varying legal frameworks and requirements.
+
+**Effective decision-making authority in joint AI-human scenarios, particularly in situations with limited resources, poses significant challenges**. Two examples that highlight these challenges are medical diagnosis assisted by AI and border controls conducted by organizations like Frontex. In both cases, time, information, and explanations are constrained, requiring rapid decisions:
+- In medical diagnosis, AI can assist healthcare professionals by analyzing vast amounts of patient data and providing potential diagnoses. However, the lack of a principled basis to contradict AI predictions implies that the reasonableness of actions must be tied to the decision to use AI in general. This suggests that as AI becomes more capable, granting general decision-making authority to human experts may become problematic.
+- Similarly, in border control scenarios, organizations like Frontex face time-sensitive situations where decisions must be made swiftly. Frontex has a mere 12 seconds to decide whether to allow or deny entry. Machine intelligence, being fundamentally different from human intelligence, may offer unique capabilities to process and analyze information. However, the question arises regarding the appropriate level of decision-making authority to grant to AI systems in such critical scenarios.
+
+The **increasing presence of AI systems raises the issue of how decision-making authority is assigned and shared between humans and machines**. Expert robots, which possess above-average decision-making abilities based on their learning and training, may challenge the traditional notion of human decision-making authority. The introduction of expert robots implies a need to redefine decision-making structures and responsibilities.
+
+Regarding the legal case study of ACAS/TCAS II (Traffic Collision Avoidance System), the system provides visual and aural advisories to the crew, including Traffic Advisories (TA) and Resolution Advisories (RA). The system decides the best course of action and informs the human pilot, who then executes the RA while receiving continuous guidance. This case highlights the collaboration between human operators and automated systems in real-time decision-making.
+
+The introduction of new technologies, such as ACAS X and ADS-B (Automatic Dependent Surveillance Broadcast), presents challenges related to liability. Unvalidated ADS-B positions, solely based on ADS-B data without validation from other surveillance sources, become a controversial design issue. Different design options, including displaying unvalidated ADS-B positions visually distinct with or without advisories, are debated to address liability concerns.
+
+The case study also touches on the ARGOS modes of operations for supporting single-pilot aircraft operations in case of pilot incapacitation. Three implementation options are considered: ATCO Focused, GSO Focused, and Automation Focused. Each option assigns different responsibilities to air traffic controllers, ground station operators, and cockpit automation systems. The selected solution, GSO + Automation, implies a shared responsibility between ground operators and automation systems to support the flight and landing of aircraft operated by a single pilot.
+
+In summary, effective decision-making authority in joint AI-human scenarios requires careful consideration of the capabilities and limitations of AI systems, the allocation of responsibilities, and the legal and liability frameworks. As AI becomes more advanced, the traditional notion of human decision-making authority may need to be reevaluated, ensuring that decision-making processes are both efficient and accountable.
 
 &nbsp;
 
@@ -1120,3 +1185,100 @@ The **invisibility of computer operations often generates policy vacuums when it
 Technology design goes beyond functional innovation. Designers have the responsibility to materialize morality in their artifacts. By considering the mediating role of technologies, designers can anticipate the ethical consequences and potential emergent forms of mediation. The ethics of engineering design should embrace the moral charge of technological products and redefine the moral responsibilities of designers (Van de Poel and Royakkers, 2011).
 
 Technological artifacts possess political and moral dimensions, challenging the notion that morality is solely a human affair. They shape human actions, mediate interactions, and influence ethical decision-making. By acknowledging the moral implications of artifacts, we can strive for active responsibility in designing technologies, fostering transparency, and promoting ethical conduct.
+
+&nbsp;
+
+## 🟥 Algorithmic fairness through group parities The case of COMPAS-SAPMOC — A Lesson to Use of Al in Tax Domain 
+
+Title: Algorithmic Fairness and the Case of COMPAS-SAPMOC: Lessons in Using AI in the Tax Domain
+
+Abstract:
+This text explores the concept of algorithmic fairness in decision making, with a specific focus on the COMPAS predictive system. COMPAS is an actuarial risk assessment instrument used to determine an offender's risk of recidivism and appropriate correctional treatment. However, concerns have been raised regarding its fairness, particularly in relation to gender and racial biases. This text examines the case of COMPAS and its implications for algorithmic fairness, highlighting the challenges and debates surrounding its use. Furthermore, it discusses the application of algorithmic fairness in the tax domain, emphasizing the need for careful consideration when employing AI systems in sensitive domains. The analysis sheds light on the complexities of achieving fairness in algorithmic decision making and calls for further research and policy interventions.
+
+1. Introduction
+Algorithmic decision making and fairness
+The COMPAS predictive system and its purpose
+
+2. The COMPAS System: AI and Unfairness
+Overview of COMPAS and its risk assessment process
+Classification of offenders based on scores and risk categories
+Factors considered in the assessment: static and dynamic variables
+
+3. The Loomis Case: Unfairness Claims and Due Process
+Overview of the case and the role of COMPAS
+Loomis' appeal and the violation of due process rights
+Concerns about COMPAS' functioning, discrimination, and individualized decision making
+
+4. The COMPAS Debate: Accuracy and Fairness Challenges
+Introduction to the ProPublica study on COMPAS
+Evaluation of COMPAS accuracy and fairness
+Comparison of predicted and actual recidivism rates
+Disparities in predictions for different racial groups
+
+5. Rebuttals and Counterarguments
+Response from Northpoint on ProPublica's study
+Claims of statistical and technical errors
+Accuracy of COMPAS predictions and compliance with fairness principles
+
+6. The Case of SAPMOC: Assessing Fairness
+Introduction to SAPMOC and its single-predictor system
+Assumptions and outcomes of SAPMOC
+Evaluation of fairness based on statistical measures
+
+7. Fairness Measures and Parity Standards
+Exploring statistical parity, equality of opportunity, calibration, conditional use error, and treatment equality
+Implications of different fairness measures in the context of SAPMOC
+
+8. The Challenges of Achieving Fairness
+Discussion on the trade-offs between fairness and accuracy
+Base rate disparities and their impact on fairness measures
+The importance of balancing individual fairness and group fairness
+
+9. Lessons for the Use of AI in the Tax Domain
+Considerations for applying AI in sensitive domains
+The need for transparency, accountability, and continuous evaluation
+Policy interventions to address algorithmic fairness
+
+10. Conclusion
+Summary of the key points discussed
+The complexities of achieving algorithmic fairness
+Call for further research and policy development in the field of algorithmic decision making
+
+Note: The content provided is a summary and interpretation of the given text prompt. It may not accurately reflect the original intentions of the author, Francesca Lagioia, PhD, or the complete context of the source material.
+
+&nbsp;
+
+## 🟥 AI Ethics at IBM
+
+AI Ethics at IBM: From Principles to Practice
+
+Francesca Rossi, an IBM fellow and AI Ethics Global Leader, delivered a presentation on AI ethics at West Point in April 2021. She began by providing a brief history of AI, starting with artificial intelligence, which involves intelligent algorithms defined and coded by humans into machines. She then discussed machine learning, which allows machines to learn without explicit programming, and deep learning, which is based on deep neural networks.
+
+Rossi emphasized the importance of data and computing power in AI, particularly in areas such as image and natural language interpretation. She highlighted various AI applications, including digital assistants like home assistants (e.g., Alexa) and travel assistants (e.g., Waze), driving/travel support systems like auto-pilot (e.g., Tesla) and ride-sharing apps (e.g., Uber, Lyft), customer care chatbots, online recommendation systems (e.g., friend recommendations on Facebook, purchase recommendations on Amazon, movie recommendations on Netflix), media and news applications like ad placement (e.g., Google) and news curation, healthcare applications such as medical image analysis and treatment plan recommendation, financial services applications like credit risk scoring, loan approval, and fraud detection, job market applications like resume prioritization, and even judicial system applications like recidivism prediction.
+
+However, Rossi acknowledged that AI has limitations. It is considered narrow AI, meaning it is designed to solve specific problems and lacks robustness and adaptability. Additionally, AI requires a significant amount of resources, including data and computing power.
+
+The discussion then shifted to ethical issues in AI. Rossi provided examples such as chatbots exhibiting racist speech, gender-biased Apple credit card approval processes, discrimination in ride-sharing dynamic pricing, and gender-biased recruitment software. She also highlighted the unethical usage of personal data and raised the question of whether we can trust AI's decisions.
+
+AI ethics is a multidisciplinary field that aims to optimize AI's beneficial impact while reducing risks and adverse outcomes. The goal is to design and build AI systems that are aware of the values and principles to be followed in deployment scenarios. Rossi emphasized the need to identify, study, and propose technical and non-technical solutions for ethical issues arising from the pervasive use of AI in life and society.
+
+The main AI ethics issues discussed included data privacy and governance, explainability and transparency of AI systems, fairness and value alignment in decision-making, accountability for mistakes, human and moral agency in AI's ability to profile and manipulate people's preferences, and the larger negative impacts of technology misuse.
+
+Rossi highlighted that AI is not a neutral technology and emphasized the importance of avoiding misuse while designing and developing AI with properties such as fairness, explainability, and robustness. She discussed the issue of AI bias, using the example of bias in the ImageNet dataset used to train image interpretation AI systems. Bias can also arise from design decisions, such as prioritized motivations for loan applications, leading to biased outcomes in mortgage applications.
+
+Different definitions of fairness were discussed, including overall accuracy equality, predictive parity, and the trade-off between false positive and false negative rates. The complexity of fairness in AI decision-making was demonstrated through decision points in the process.
+
+AI explainability was also addressed, as AI systems cannot be black boxes. The General Data Protection Regulation (GDPR) was mentioned regarding data handling. The discussion touched upon the potential for AI to profile and manipulate individuals' preferences, leading to concerns around privacy, agency, and identity.
+
+The impact of AI on the workforce was acknowledged, with the expectation that many jobs will disappear, while others will be created and all jobs will change. The presentation concluded with a vision for the future, highlighting the UN Sustainable Development Goals and the potential for AI to contribute to achieving these goals.
+
+IBM's approach to AI ethics was outlined, emphasizing the principles of trust and transparency, which include augmenting human intelligence, ensuring data and insights belong to their creators, and designing transparent and explainable technologies. IBM's commitment to AI fairness and transparency was reflected in various technical solutions, education and training for developers, AI factsheets for transparency and documentation, and internal governance frameworks.
+
+IBM's governance approach includes an AI Ethics board responsible for awareness, coordination, education, linking research to services, and advice to business units. External partnerships with academia, companies, governments, and civil society organizations were highlighted as crucial for addressing AI ethics challenges.
+
+The presentation touched on other emerging technologies, such as neurotechnologies with potential healthcare applications, quantum computing, and the need for responsible use of immense computing power.
+
+In conclusion, Rossi provided useful links to access IBM's resources on AI ethics, including their approach, educational materials, global studies, public policies, and open-source toolkits.
+
+Overall, the presentation at West Point emphasized the importance of AI ethics in designing, developing, and deploying AI systems that align with human values, promote fairness, transparency, and accountability, and contribute to a positive and responsible AI-driven future.
+
