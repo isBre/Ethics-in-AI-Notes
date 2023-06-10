@@ -1372,6 +1372,10 @@ Overall, the presentation at West Point emphasized the importance of AI ethics i
 
 &nbsp;
 
+<img src="Schemes/GDPR.png">
+
+&nbsp;
+
 &nbsp;
 
 # ❔ Questions
