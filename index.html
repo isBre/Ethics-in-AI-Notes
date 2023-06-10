@@ -135,7 +135,7 @@
 </li>
 </ul>
 </li>
-<li><a href="#-text-analytics-in-the-legal-domain-claudette">🟥 Text analytics in the legal domain (Claudette)</a></li>
+<li><a href="#-text-analytics-in-the-legal-domain-claudette">🟨 Text analytics in the legal domain (Claudette)</a></li>
 <li><a href="#-the-regulation-of-online-targeted-advertising-is-consent-enough">🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?</a></li>
 <li><a href="#-the-ethical-knob-ethically-customisable-automated-vehicles-and-the-law">🟨 The Ethical Knob: Ethically-Customisable Automated Vehicles and the Law</a>
 <ul>
@@ -143,6 +143,7 @@
 <li><a href="#conclusions-1">Conclusions</a></li>
 </ul>
 </li>
+<li><a href="#-compas-case">🟥 COMPAS Case</a></li>
 <li><a href="#seminars">Seminars</a>
 <ul>
 <li><a href="#-do-artifacts-have-politics">🟨 Do Artifacts Have Politics?</a>
@@ -156,7 +157,6 @@
 </ul>
 </li>
 <li><a href="#-fairness-in-algorithmic-decision-making">🟥 Fairness in algorithmic decision making</a></li>
-<li><a href="#-algorithmic-fairness-through-group-parities-the-case-of-compas-sapmoc--a-lesson-to-use-of-al-in-tax-domain">🟥 Algorithmic fairness through group parities The case of COMPAS-SAPMOC — A Lesson to Use of Al in Tax Domain</a></li>
 <li><a href="#-ai-ethics-at-ibm">🟥 AI Ethics at IBM</a></li>
 </ul>
 </li>
@@ -918,17 +918,15 @@ The decision should have a tangible impact on the data subject, such as automati
 <p>Some legal scholars propose a general right to &quot;<strong>reasonable inference</strong>&quot; for data subjects, which means that any assessment or decision affecting individuals should be obtained through automated inferences that meet ethical and epistemic standards. Inferences should be based on normatively acceptable input data, be relevant to the purpose of the decision, and demonstrate reliability in terms of accuracy and statistical validity. Controllers should be prohibited from relying on unreasonable inferences and should have the obligation to demonstrate the reasonableness of their inferences. However, these requirements should apply specifically to inferences leading to assessments and decisions affecting the data subject, not to inquiries for cognitive purposes such as scientific research.</p>
 <p> </p>
 <p> </p>
-<h1 id="-text-analytics-in-the-legal-domain-claudette">🟥 Text analytics in the legal domain (Claudette)</h1>
+<h1 id="-text-analytics-in-the-legal-domain-claudette">🟨 Text analytics in the legal domain (Claudette)</h1>
 <p>The provided text describes a <strong>master project focused on text analytics in the legal domain, specifically the analysis of contracts and privacy policies in a system called Claudette</strong>. The project is conducted under the context of Action No 2020-EU-IA-0087 and is co-financed by the EU CEF Telecom. The team involved in the project includes researchers and experts from various institutions such as the European University Institute (EUI), University of Bologna, University of Modena, Yale Law School, Maastricht Law Department, and more.</p>
-<p>The main goal of the project is to <strong>explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion</strong>. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are <strong>often overlooked by consumers</strong>. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while businesses continue to use potentially unlawful clauses.</p>
-<p>The project involves manual annotation of a training set consisting of terms of service (ToS) documents. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. <strong>The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13</strong>. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.</p>
-<p>The text discusses specific types of potentially unfair clauses, such as arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.</p>
+<p>The main goal of the project is to <strong>explore the potential of artificial intelligence (AI) in empowering consumers in various aspects, including privacy, autonomy, economic interests, behavior, access to goods and services, and social exclusion</strong>. The project aims to develop technologies that can automatically detect potentially unfair clauses in terms of service and privacy policies, which are <strong>often overlooked by consumers</strong>. Non-governmental organizations (NGOs) lack the resources to thoroughly analyze these clauses, while <strong>businesses continue to use potentially unlawful clauses</strong>.</p>
+<p>The project involves <strong>manual annotation of a training set consisting of terms of service (ToS) documents</strong>. Initially, 50 ToS documents were annotated, and further progress was made with 100 ToS documents. <strong>The project focuses on identifying unfair clauses in the documents based on the Unfair Contract Terms Law and Practice Directive 93/13</strong>. The directive states that contractual terms that cause a significant imbalance in the parties' rights and obligations and are contrary to good faith can be regarded as unfair.</p>
+<p>The text discusses specific types of potentially unfair clauses, such as <strong>arbitration clauses, unilateral change clauses, content removal clauses, jurisdiction clauses, choice of law clauses, limitation of liability clauses, unilateral termination clauses, consent by using clauses, and privacy included clauses</strong>. Examples of potentially unfair clauses are provided, along with criteria for determining their fairness or unfairness.</p>
 <p>For example, if a clause states that the consumer is bound by the terms of service simply by visiting the website or by downloading the app, or by using the service: <strong>potentially unfair</strong>. If giving consumers a right to bring disputes in their place of residence: <strong>clearly fair</strong>. If stating that any judicial proceeding takes a residence away (i.e. in a different city, different country): <strong>clearly unfair</strong>.</p>
-<p><strong>The project employs various machine learning methodologies</strong>, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, correctly detecting around 80% of potentially unfair clauses in each category. The text also introduces <strong>Memory-Augmented Neural Networks</strong>, which process and store information in memory. These networks can understand relevant knowledge for a given query, retrieve concepts from memory, and combine memory and query to make predictions.</p>
-<p>The focus then shifts to exploiting knowledge for identifying unfairness in the context of GDPR compliance. <strong>The tool ensures compliance with GDPR articles 13-14, detects vague language, and identifies clauses that are insufficiently informative</strong>.</p>
-<p>The text further explains the criteria for assessing privacy policies in terms of lawfulness, fairness, transparency, clarity of expression, and substantive compliance. Different levels of achievement are discussed, including optimal and suboptimal (questionable or insufficient) compliance.</p>
-<p>Several examples are provided to illustrate different aspects, such as the comprehensiveness of information, categories of personal data concerned, consent clauses, policy change notifications, and clarity of expression. Vagueness indicators are discussed, including conditional terms, generalizations, modality, and non-specific numeric quantifiers. The <strong>multilingual capabilities</strong> of Claudette in German, Italian, and Polish are highlighted, along with different approaches for creating target-language datasets.</p>
-<p>Finally, the <strong>text briefly mentions a web-crawler tool developed for automatic privacy policy monitoring, which involves checking document dates and comparing content with previously saved versions</strong>.</p>
+<p><strong>The project employs various machine learning methodologies, including the Bag of Words (BoW) model, tree kernels, and Support Vector Machines (SVM), to analyze and classify sentences in terms of their potential unfairness</strong>. The text describes the data representation and ensemble methods used in the experiments, as well as the evaluation metrics employed, such as precision, recall, and F1 score. The results indicate that the ensemble model performs the best, <strong>correctly detecting around 80%</strong> of potentially unfair clauses in each category. The text also introduces <strong>Memory-Augmented Neural Networks</strong>, which process and store information in memory. These networks can understand relevant knowledge for a given query, retrieve concepts from memory, and combine memory and query to make predictions.</p>
+<p>CLAUDETTE aims to ensure compliance with articles 13-14 of the GDPR by ensuring the necessary information is present, identifying problematic clauses related to data processing, and detecting vague language. <strong>The golden standard for privacy policies includes lawfulness, fairness, transparency, clarity of expression, and substantive compliance with the GDPR</strong>. Policies should be written in understandable and precise language and provide comprehensive information as required by articles 13 and 14 of the GDPR. Compliance with the GDPR can be achieved at different levels, with optimal achievement providing fully informative clauses and suboptimal achievement indicating questionable or insufficient information. Various categories of information need to be addressed, such as the identity of the controller, purposes of processing, legal basis, recipients of data, and more.</p>
+<p><strong>Privacy policies should clearly state the purposes for which personal data is being processed, and provide comprehensive and non-vague descriptions of the categories of personal data concerned</strong>. Substantive compliance refers to compliance with various articles of the GDPR, and different types of clauses are evaluated for this compliance, including those related to special categories of personal data, consent, policy changes, data transfers, processing of children's data, and advertising.Privacy policies should be framed in understandable and precise language, avoiding vagueness indicators such as conditional terms, generalization, modality, and non-specific numeric quantifiers.</p>
 <p> </p>
 <p> </p>
 <h1 id="-the-regulation-of-online-targeted-advertising-is-consent-enough">🟥 The Regulation of Online Targeted Advertising: Is Consent Enough?</h1>
@@ -1002,6 +1000,25 @@ The decision should have a tangible impact on the data subject, such as automati
 <p> </p>
 <h2 id="conclusions-1">Conclusions</h2>
 <p>The authors propose the use of an Ethical Knob in autonomous vehicles (AVs) to address moral dilemmas and allocate ethical choices to the users. The knob allows passengers to customize the AV's behavior by choosing between different moral settings, such as prioritizing the lives of pedestrians or passengers. This customization offers a wider range of choices compared to preprogrammed AVs. The legal analysis indicates that ethically customizable AVs would differ significantly from preprogrammed AVs and human-driven cars in terms of their legal implications. With the Ethical Knob, users would assume responsibility for ethical decisions, similar to drivers of traditional cars, and the state-of-necessity defense could apply in some cases. The knob's settings selected in advance could affect the distinction between action and omission, potentially treating ethically customizable AVs similarly to preprogrammed AVs. Manufacturers would not have additional obligations or liabilities unless they enable illegal behavior through the AV's settings. <strong>The Ethical Knob could facilitate market placement and enhance user acceptance of AVs by aligning the moral algorithm with individual attitudes and convictions. However, insurance implications arise when users select settings that prioritize their lives over third parties, potentially increasing the risk for others and impacting coverage and premiums</strong>. The extent to which the state-of-necessity defense would apply in such scenarios and the level of user-selected egoism that could lead to criminal or civil liability would require regulatory clarification.</p>
+<p> </p>
+<p> </p>
+<h1 id="-compas-case">🟥 COMPAS Case</h1>
+<p>The COMPAS case involves the use of the Correctional Offender Management Profiling for Alternative Sanctions algorithm in the criminal justice system. COMPAS is a proprietary software used in the United States to assess the likelihood of recidivism, or the probability of reoffending.</p>
+<p>One of the controversies surrounding COMPAS is the accusation of racial bias in the algorithm. Several studies have discovered that the algorithm's predictions were more likely to label black defendants as high-risk for recidivism.</p>
+<p>Another criticized aspect is the lack of transparency and explainability in the COMPAS algorithm. Defendants and their legal representatives often have limited access to the internal workings of COMPAS, such as specific variables and weighting. This lack of transparency makes it difficult for individuals to comprehend how the algorithm's predictions are made and to raise concerns about challenging or questioning the automated decision-making procedures.</p>
+<p>The overall case has sparked debates about the role of algorithms in the criminal justice system and the potential risks of relying on automated decision-making tools. It has also raised broader questions about fairness, transparency, and accountability when using algorithms to influence significant decisions that impact individuals' lives and freedoms.</p>
+<p>Evaluation based on three fairness criteria:</p>
+<ol>
+<li>
+<p>Accuracy and Predictive Parity: Several studies have expressed concerns regarding racial bias exhibited by COMPAS, indicating a potential disparity in prediction accuracy and raising concerns about predictive parity.</p>
+</li>
+<li>
+<p>Procedural Fairness and Transparency: COMPAS is reportedly lacking in transparency and explainability, making it challenging for defendants and their legal representatives to challenge or understand the automated decision-making procedures defined by COMPAS.</p>
+</li>
+<li>
+<p>Equal Treatment and Disparate Impact: Fairness also entails treating individuals equally and ensuring that the algorithm does not disproportionately impact specific groups. It has been argued that the algorithm's predictions contribute to existing biases, potentially leading to disproportionate negative impacts on certain racial or ethnic groups. This perpetuates systemic inequalities and raises questions about equal treatment under the law.</p>
+</li>
+</ol>
 <p> </p>
 <p> </p>
 <h1 id="seminars">Seminars</h1>
@@ -1222,72 +1239,6 @@ AI can play a significant role in addressing climate change and environmental ch
 <p>The article discusses fairness in algorithmic decision-making, focusing on the combination of artificial intelligence (AI) and big data. It examines the potential causes of unfairness in AI systems, including biases and discriminatory outcomes. The article highlights that AI systems have the potential to be more precise and impartial than humans in many domains but also points out the possibility of algorithmic mistakes and discrimination.</p>
 <p>The authors discuss different ways in which unfairness can arise in algorithmic decision-making systems. These include the reproduction of human biases and prejudices in the training data, biases embedded in the predictors used by the system, biased training sets, and data sets that do not reflect the statistical composition of the population. The challenges in challenging the unfairness of automated decision-making systems are also discussed, noting that it can be difficult to challenge these systems due to the reliance on statistical correlations and the higher burden of evidence required compared to the algorithms themselves.</p>
 <p>The article presents the case of the COMPAS predictive system and the Loomis case, which involved the use of the COMPAS system in a sentencing decision. The challenges and criticisms raised regarding the accuracy and fairness of the COMPAS system are examined, as well as the rebuttals to those criticisms. The article concludes by suggesting that while there are challenges and limitations, the use of automated decision-making should not be categorically excluded. Instead, a combination of human and automated judgments, transparency, and the development of methods to analyze and review automated decision-making should be pursued to find the best balance between human expertise and AI capabilities.</p>
-<p> </p>
-<h2 id="-algorithmic-fairness-through-group-parities-the-case-of-compas-sapmoc--a-lesson-to-use-of-al-in-tax-domain">🟥 Algorithmic fairness through group parities The case of COMPAS-SAPMOC — A Lesson to Use of Al in Tax Domain</h2>
-<p>Abstract:
-This text explores the concept of algorithmic fairness in decision making, with a specific focus on the COMPAS predictive system. COMPAS is an actuarial risk assessment instrument used to determine an offender's risk of recidivism and appropriate correctional treatment. However, concerns have been raised regarding its fairness, particularly in relation to gender and racial biases. This text examines the case of COMPAS and its implications for algorithmic fairness, highlighting the challenges and debates surrounding its use. Furthermore, it discusses the application of algorithmic fairness in the tax domain, emphasizing the need for careful consideration when employing AI systems in sensitive domains. The analysis sheds light on the complexities of achieving fairness in algorithmic decision making and calls for further research and policy interventions.</p>
-<ol>
-<li>
-<p>Introduction
-Algorithmic decision making and fairness
-The COMPAS predictive system and its purpose</p>
-</li>
-<li>
-<p>The COMPAS System: AI and Unfairness
-Overview of COMPAS and its risk assessment process
-Classification of offenders based on scores and risk categories
-Factors considered in the assessment: static and dynamic variables</p>
-</li>
-<li>
-<p>The Loomis Case: Unfairness Claims and Due Process
-Overview of the case and the role of COMPAS
-Loomis' appeal and the violation of due process rights
-Concerns about COMPAS' functioning, discrimination, and individualized decision making</p>
-</li>
-<li>
-<p>The COMPAS Debate: Accuracy and Fairness Challenges
-Introduction to the ProPublica study on COMPAS
-Evaluation of COMPAS accuracy and fairness
-Comparison of predicted and actual recidivism rates
-Disparities in predictions for different racial groups</p>
-</li>
-<li>
-<p>Rebuttals and Counterarguments
-Response from Northpoint on ProPublica's study
-Claims of statistical and technical errors
-Accuracy of COMPAS predictions and compliance with fairness principles</p>
-</li>
-<li>
-<p>The Case of SAPMOC: Assessing Fairness
-Introduction to SAPMOC and its single-predictor system
-Assumptions and outcomes of SAPMOC
-Evaluation of fairness based on statistical measures</p>
-</li>
-<li>
-<p>Fairness Measures and Parity Standards
-Exploring statistical parity, equality of opportunity, calibration, conditional use error, and treatment equality
-Implications of different fairness measures in the context of SAPMOC</p>
-</li>
-<li>
-<p>The Challenges of Achieving Fairness
-Discussion on the trade-offs between fairness and accuracy
-Base rate disparities and their impact on fairness measures
-The importance of balancing individual fairness and group fairness</p>
-</li>
-<li>
-<p>Lessons for the Use of AI in the Tax Domain
-Considerations for applying AI in sensitive domains
-The need for transparency, accountability, and continuous evaluation
-Policy interventions to address algorithmic fairness</p>
-</li>
-<li>
-<p>Conclusion
-Summary of the key points discussed
-The complexities of achieving algorithmic fairness
-Call for further research and policy development in the field of algorithmic decision making</p>
-</li>
-</ol>
-<p>Note: The content provided is a summary and interpretation of the given text prompt. It may not accurately reflect the original intentions of the author, Francesca Lagioia, PhD, or the complete context of the source material.</p>
 <p> </p>
 <h2 id="-ai-ethics-at-ibm">🟥 AI Ethics at IBM</h2>
 <p>AI Ethics at IBM: From Principles to Practice</p>
